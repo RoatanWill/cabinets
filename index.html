@@ -57,6 +57,7 @@
                             <select id="cabType" onchange="applyTypeDefaults()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                 <option value="standardBase">Base Estándar (24" de Profundidad)</option>
                                 <option value="deepBase12">Base Profunda de 12"</option>
+                                <option value="vanity21">Tocador de Baño (21" de Profundidad)</option>
                                 <option value="upper12">Superior Profundo de 12" (sin traveseros)</option>
                             </select>
                         </div>
@@ -249,6 +250,193 @@
                 </div>
             </div>
         </div>
+
+        <!-- Drawer Boxes Section -->
+        <div class="mt-10 pt-8 border-t border-slate-800">
+            <h2 class="text-2xl font-bold text-amber-500 tracking-tight mb-1">Cajones de Gaveta</h2>
+            <p class="text-slate-400 text-sm mb-6">Genere cajones a partir de los gabinetes del pedido, o agréguelos manualmente. Ensamble por tornillo de bolsillo, fondo capturado en ranura.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+                <!-- Left: Drawer Inputs -->
+                <div class="lg:col-span-5 space-y-6">
+
+                    <!-- Generate from cabinet -->
+                    <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-4">
+                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3">Generar desde Gabinete del Pedido</h3>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Gabinete</label>
+                            <select id="drawerSourceCabinet" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                <option value="">-- Agregue gabinetes al pedido primero --</option>
+                            </select>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"># de Cajones</label>
+                                <input type="number" inputmode="numeric" id="drawerCountPerCab" value="1" min="1" step="1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Guía</label>
+                                <select id="drawerSlideTypeAuto" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                    <option value="undermount">Oculta (Undermount)</option>
+                                    <option value="sidemount">Lateral (Side-Mount)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button onclick="addDrawersFromCabinet()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-3 transition">
+                            + Generar Cajones desde Gabinete
+                        </button>
+                        <p class="text-[11px] text-slate-500">La altura de apertura se reparte en partes iguales usando las vistas/espacios calibrados abajo. El ancho de apertura usa el espesor de costado ya calibrado en Gabinetes.</p>
+                    </div>
+
+                    <!-- Manual entry -->
+                    <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-4">
+                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3">Agregar Cajón Manualmente</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Ancho de Apertura</label>
+                                <input type="number" inputmode="decimal" id="drawerOpenW" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Alto de Apertura</label>
+                                <input type="number" inputmode="decimal" id="drawerOpenH" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Profundidad de Gabinete</label>
+                                <input type="number" inputmode="decimal" id="drawerCabDepth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Guía</label>
+                                <select id="drawerSlideTypeManual" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                    <option value="undermount">Oculta (Undermount)</option>
+                                    <option value="sidemount">Lateral (Side-Mount)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Cantidad</label>
+                            <select id="drawerQty" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                                <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                                <option>12</option><option>15</option><option>16</option><option>18</option><option>20</option><option>24</option>
+                            </select>
+                        </div>
+                        <button onclick="addDrawerManual()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-3 transition">
+                            + Agregar Cajón
+                        </button>
+                    </div>
+
+                    <!-- Calibration -->
+                    <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
+                        <details>
+                            <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none">Calibración de Cajones y Guías</summary>
+                            <div class="mt-4 space-y-4">
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Espesor de Caja</label>
+                                        <input type="number" inputmode="decimal" id="drawerBoxThick" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Espesor de Fondo</label>
+                                        <input type="number" inputmode="decimal" id="drawerBottomThick" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Ranura de Fondo</label>
+                                        <input type="number" inputmode="decimal" id="drawerBottomGroove" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                    </div>
+                                    <div>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro de Ranura</label>
+                                        <input type="number" inputmode="decimal" id="drawerBottomInset" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-slate-700/50 pt-3">
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Reparto de Alturas (Generar desde Gabinete)</h4>
+                                    <div class="grid grid-cols-3 gap-2">
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Vista Superior</label>
+                                            <input type="number" inputmode="decimal" id="drawerRevealTop" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Vista Inferior</label>
+                                            <input type="number" inputmode="decimal" id="drawerRevealBottom" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Espacio Entre</label>
+                                            <input type="number" inputmode="decimal" id="drawerGapBetween" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-slate-700/50 pt-3 space-y-3">
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Guía Oculta (Undermount)</h4>
+                                    <div class="grid grid-cols-3 gap-2">
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Ancho (Total)</label>
+                                            <input type="number" inputmode="decimal" id="umWidthClear" step="0.001" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Alto</label>
+                                            <input type="number" inputmode="decimal" id="umHeightClear" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Fondo</label>
+                                            <input type="number" inputmode="decimal" id="umDepthSetback" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                    </div>
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Guía Lateral (Side-Mount)</h4>
+                                    <div class="grid grid-cols-3 gap-2">
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Ancho (Total)</label>
+                                            <input type="number" inputmode="decimal" id="smWidthClear" step="0.001" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Alto</label>
+                                            <input type="number" inputmode="decimal" id="smHeightClear" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Fondo</label>
+                                            <input type="number" inputmode="decimal" id="smDepthSetback" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button onclick="applyDrawerDefaults(currentUnit); renderDrawers();" class="w-full text-xs font-semibold text-slate-400 hover:text-amber-500 transition border border-slate-700 hover:border-amber-500/50 rounded-xl py-2">
+                                    Restablecer a valores estándar
+                                </button>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 text-xs text-slate-400 leading-relaxed">
+                        <span class="text-amber-500/90 font-semibold">Ensamble estándar:</span>
+                        Frente y fondo (trasero) cortados entre los costados, unidos con tornillo de bolsillo. Costados de largo completo (profundidad de la caja). Fondo capturado en ranura en los cuatro lados.
+                        Los retiros de guía son valores de referencia de fábrica — confirme con la ficha técnica de su guía específica antes de cortar. Esta lista de corte no se incluye en el Optimizador de Diseño de Lámina de gabinetes.
+                    </div>
+                </div>
+
+                <!-- Right: Drawer Order + Cut List -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 border-b border-slate-700 pb-4 mb-4">
+                            <h2 class="text-xl font-semibold text-slate-200">Pedido de Cajones</h2>
+                            <button onclick="clearDrawers()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2">Vaciar Cajones</button>
+                        </div>
+                        <div id="drawerOrderList" class="space-y-2"></div>
+                        <p class="text-[11px] text-slate-500 mt-3">Los cajones se incluyen automáticamente al usar "Exportar Pedido" arriba (XLSX/PDF), como secciones adicionales.</p>
+                    </div>
+
+                    <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
+                        <div class="flex justify-between items-center border-b border-slate-700 pb-4 mb-6">
+                            <h2 class="text-xl font-semibold text-slate-200">Lista de Corte de Cajones</h2>
+                        </div>
+                        <div id="drawerCutList" class="space-y-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Sheet Layout Modal -->
@@ -274,18 +462,54 @@
             standardBase: {
                 label: 'Base Estándar (24" de Profundidad)',
                 hasStretchers: true,
+                defaultSlide: 'undermount',
                 defaults: { in: { width: 24, depth: 24, height: 30.5 }, mm: { width: 610, depth: 600, height: 775 } }
             },
             deepBase12: {
                 label: 'Base Profunda de 12"',
                 hasStretchers: true,
+                defaultSlide: 'sidemount',
                 defaults: { in: { width: 24, depth: 12, height: 30.5 }, mm: { width: 610, depth: 305, height: 775 } }
+            },
+            vanity21: {
+                label: 'Tocador de Baño (21" de Profundidad)',
+                hasStretchers: true,
+                defaultSlide: 'sidemount',
+                defaults: { in: { width: 24, depth: 21, height: 30.5 }, mm: { width: 610, depth: 533, height: 775 } }
             },
             upper12: {
                 label: 'Superior Profundo de 12"',
                 hasStretchers: false,
+                defaultSlide: null,
                 defaults: { in: { width: 24, depth: 12, height: 30.5 }, mm: { width: 610, depth: 305, height: 775 } }
             }
+        };
+
+        // Drawer slide types: clearance rules per shop/hardware standard.
+        // Width/height clearances are TOTAL (both sides combined) subtracted from the opening.
+        // depthSetback accounts for rear clearance + mounting hardware; depthIncrement rounds the
+        // resulting box depth down to the nearest available slide length (informational).
+        const DRAWER_SLIDE_TYPES = {
+            undermount: {
+                label: 'Guía Oculta (Undermount)',
+                defaults: {
+                    in: { widthClear: 0.625, heightClear: 1, depthSetback: 1.5, depthIncrement: 3 },
+                    mm: { widthClear: 16, heightClear: 25, depthSetback: 38, depthIncrement: 76 }
+                }
+            },
+            sidemount: {
+                label: 'Guía Lateral (Side-Mount)',
+                defaults: {
+                    in: { widthClear: 1, heightClear: 0.5, depthSetback: 1, depthIncrement: 2 },
+                    mm: { widthClear: 25, heightClear: 13, depthSetback: 25, depthIncrement: 51 }
+                }
+            }
+        };
+
+        // Drawer box construction defaults (pocket-screw assembly, groove-captured bottom)
+        const drawerBoxDefaults = {
+            in: { boxThick: 0.5, bottomThick: 0.25, bottomGroove: 0.25, bottomInset: 0.375 },
+            mm: { boxThick: 13, bottomThick: 6, bottomGroove: 6, bottomInset: 10 }
         };
 
         // Shop-standard joinery defaults, per unit
@@ -418,6 +642,9 @@
 
             applyDefaults(unit);
             renderOrder(); // re-express existing order in the new unit; order data itself is untouched
+
+            applyDrawerDefaults(unit);
+            renderDrawers();
         }
 
         function applyDefaults(unit) {
@@ -682,6 +909,8 @@
         }
 
         function renderOrder() {
+            populateDrawerCabinetSelect();
+
             const listEl = document.getElementById('orderList');
             const cutListEl = document.getElementById('cutList');
 
@@ -770,6 +999,235 @@
             return { orderRows, cutListRows, grouped };
         }
 
+        // ================= Drawer Boxes =================
+        let drawerOrder = [];
+        let nextDrawerId = 1;
+
+        function applyDrawerDefaults(unit) {
+            const d = drawerBoxDefaults[unit];
+            document.getElementById('drawerBoxThick').value = d.boxThick;
+            document.getElementById('drawerBottomThick').value = d.bottomThick;
+            document.getElementById('drawerBottomGroove').value = d.bottomGroove;
+            document.getElementById('drawerBottomInset').value = d.bottomInset;
+
+            // Sensible starting reveal: 1/8" (or ~3mm) top, bottom, and between drawer faces
+            const reveal = unit === 'in' ? 0.125 : 3;
+            document.getElementById('drawerRevealTop').value = reveal;
+            document.getElementById('drawerRevealBottom').value = reveal;
+            document.getElementById('drawerGapBetween').value = reveal;
+
+            const um = DRAWER_SLIDE_TYPES.undermount.defaults[unit];
+            document.getElementById('umWidthClear').value = um.widthClear;
+            document.getElementById('umHeightClear').value = um.heightClear;
+            document.getElementById('umDepthSetback').value = um.depthSetback;
+
+            const sm = DRAWER_SLIDE_TYPES.sidemount.defaults[unit];
+            document.getElementById('smWidthClear').value = sm.widthClear;
+            document.getElementById('smHeightClear').value = sm.heightClear;
+            document.getElementById('smDepthSetback').value = sm.depthSetback;
+        }
+
+        function getDrawerJoinery() {
+            return {
+                boxThick: toIn(parseFloat(document.getElementById('drawerBoxThick').value) || 0),
+                bottomThick: toIn(parseFloat(document.getElementById('drawerBottomThick').value) || 0),
+                bottomGroove: toIn(parseFloat(document.getElementById('drawerBottomGroove').value) || 0),
+                bottomInset: toIn(parseFloat(document.getElementById('drawerBottomInset').value) || 0)
+            };
+        }
+
+        function getSlideClearance(slideType) {
+            const prefix = slideType === 'undermount' ? 'um' : 'sm';
+            return {
+                widthClear: toIn(parseFloat(document.getElementById(prefix + 'WidthClear').value) || 0),
+                heightClear: toIn(parseFloat(document.getElementById(prefix + 'HeightClear').value) || 0),
+                depthSetback: toIn(parseFloat(document.getElementById(prefix + 'DepthSetback').value) || 0)
+            };
+        }
+
+        function getRevealSettings() {
+            return {
+                top: toIn(parseFloat(document.getElementById('drawerRevealTop').value) || 0),
+                bottom: toIn(parseFloat(document.getElementById('drawerRevealBottom').value) || 0),
+                gap: toIn(parseFloat(document.getElementById('drawerGapBetween').value) || 0)
+            };
+        }
+
+        // Computes box W/H/D (canonical inches) from an opening + slide type + cabinet depth
+        function computeDrawerBoxDims(openW_in, openH_in, cabDepth_in, slideType) {
+            const c = getSlideClearance(slideType);
+            const boxW = Math.max(openW_in - c.widthClear, 0);
+            const boxH = Math.max(openH_in - c.heightClear, 0);
+            const boxD = Math.max(cabDepth_in - c.depthSetback, 0);
+            return { boxW, boxH, boxD };
+        }
+
+        function populateDrawerCabinetSelect() {
+            const sel = document.getElementById('drawerSourceCabinet');
+            if (!sel) return;
+            const current = sel.value;
+            if (order.length === 0) {
+                sel.innerHTML = '<option value="">-- Agregue gabinetes al pedido primero --</option>';
+                return;
+            }
+            sel.innerHTML = order.map(item => {
+                const t = CABINET_TYPES[item.typeKey];
+                return `<option value="${item.id}">${item.qty} &times; ${t.label} \u2014 ${fmt(item.W_in)} x ${fmt(item.D_in)} x ${fmt(item.H_in)}</option>`;
+            }).join('');
+            if (order.some(i => String(i.id) === current)) sel.value = current;
+        }
+
+        function addDrawersFromCabinet() {
+            const cabId = parseInt(document.getElementById('drawerSourceCabinet').value);
+            const cab = order.find(i => i.id === cabId);
+            if (!cab) { alert('Seleccione un gabinete del pedido.'); return; }
+
+            const t = CABINET_TYPES[cab.typeKey];
+            const numDrawers = Math.max(1, parseInt(document.getElementById('drawerCountPerCab').value) || 1);
+            const slideType = document.getElementById('drawerSlideTypeAuto').value;
+            const j = getJoinery(); // cabinet carcass joinery, for interior opening width
+            const reveal = getRevealSettings();
+
+            const openW_in = Math.max(cab.W_in - (2 * j.t_side), 0);
+            const totalGaps = reveal.gap * (numDrawers - 1);
+            const openH_in = Math.max((cab.H_in - reveal.top - reveal.bottom - totalGaps) / numDrawers, 0);
+
+            const { boxW, boxH, boxD } = computeDrawerBoxDims(openW_in, openH_in, cab.D_in, slideType);
+
+            drawerOrder.push({
+                id: nextDrawerId++,
+                sourceLabel: `${t.label} (${fmt(cab.W_in)} x ${fmt(cab.D_in)})`,
+                slideType,
+                openW_in, openH_in,
+                boxW_in: boxW, boxH_in: boxH, boxD_in: boxD,
+                qty: numDrawers * cab.qty
+            });
+            renderDrawers();
+        }
+
+        function addDrawerManual() {
+            const openW_in = toIn(parseFloat(document.getElementById('drawerOpenW').value) || 0);
+            const openH_in = toIn(parseFloat(document.getElementById('drawerOpenH').value) || 0);
+            const cabDepth_in = toIn(parseFloat(document.getElementById('drawerCabDepth').value) || 0);
+            const slideType = document.getElementById('drawerSlideTypeManual').value;
+            const qty = parseInt(document.getElementById('drawerQty').value) || 1;
+
+            if (openW_in <= 0 || openH_in <= 0 || cabDepth_in <= 0) {
+                alert('Ingrese ancho, alto de apertura y profundidad de gabinete antes de agregar.');
+                return;
+            }
+
+            const { boxW, boxH, boxD } = computeDrawerBoxDims(openW_in, openH_in, cabDepth_in, slideType);
+
+            drawerOrder.push({
+                id: nextDrawerId++,
+                sourceLabel: 'Entrada manual',
+                slideType,
+                openW_in, openH_in,
+                boxW_in: boxW, boxH_in: boxH, boxD_in: boxD,
+                qty
+            });
+            renderDrawers();
+        }
+
+        function removeDrawer(id) {
+            drawerOrder = drawerOrder.filter(d => d.id !== id);
+            renderDrawers();
+        }
+
+        function clearDrawers() {
+            drawerOrder = [];
+            renderDrawers();
+        }
+
+        // Parts for one drawer box (canonical inches) — pocket-screw assembly, groove-captured bottom
+        function computeDrawerParts(boxW, boxD, boxH) {
+            const dj = getDrawerJoinery();
+            const parts = [];
+            parts.push({ part: 'Costado de Cajón', qty: 2, dims: [boxD, boxH], note: 'Largo completo (profundidad de la caja); tornillo de bolsillo hacia frente y fondo' });
+            const fbWidth = Math.max(boxW - (2 * dj.boxThick), 0);
+            parts.push({ part: 'Frente de Cajón (Interior)', qty: 1, dims: [fbWidth, boxH], note: 'Corte entre costados; el frente decorativo se sobrepone aparte' });
+            parts.push({ part: 'Fondo Trasero de Cajón', qty: 1, dims: [fbWidth, boxH], note: 'Corte entre costados' });
+            const bottomW = fbWidth + (2 * dj.bottomGroove);
+            const bottomD = Math.max(boxD - (2 * dj.boxThick), 0) + (2 * dj.bottomGroove);
+            parts.push({ part: 'Fondo de Cajón', qty: 1, dims: [bottomW, bottomD], note: `Capturado en ranura de ${fmt(dj.bottomGroove)}, retirada ${fmt(dj.bottomInset)} del borde inferior` });
+            return parts;
+        }
+
+        function buildDrawerOrderData() {
+            const agg = new Map();
+            drawerOrder.forEach(d => {
+                const parts = computeDrawerParts(d.boxW_in, d.boxD_in, d.boxH_in);
+                parts.forEach(p => {
+                    const key = `${p.part}|${p.dims[0].toFixed(4)}|${p.dims[1].toFixed(4)}`;
+                    if (agg.has(key)) {
+                        agg.get(key).qty += p.qty * d.qty;
+                    } else {
+                        agg.set(key, { part: p.part, dims: p.dims, note: p.note, qty: p.qty * d.qty });
+                    }
+                });
+            });
+            const drawerPartOrder = ['Costado de Cajón', 'Frente de Cajón (Interior)', 'Fondo Trasero de Cajón', 'Fondo de Cajón'];
+            const grouped = Array.from(agg.values()).sort((a, b) => drawerPartOrder.indexOf(a.part) - drawerPartOrder.indexOf(b.part));
+
+            const drawerOrderRows = drawerOrder.map(d => ({
+                'Origen': d.sourceLabel,
+                'Guía': DRAWER_SLIDE_TYPES[d.slideType].label,
+                'Ancho de Caja': fmt(d.boxW_in),
+                'Profundidad de Caja': fmt(d.boxD_in),
+                'Alto de Caja': fmt(d.boxH_in),
+                'Cantidad': d.qty
+            }));
+
+            const drawerCutListRows = grouped.map(g => ({
+                'Pieza': g.part,
+                'Dimensión A': fmt(g.dims[0]),
+                'Dimensión B': fmt(g.dims[1]),
+                'Cantidad': g.qty,
+                'Notas': g.note
+            }));
+
+            return { drawerOrderRows, drawerCutListRows, grouped };
+        }
+
+        function renderDrawers() {
+            populateDrawerCabinetSelect();
+            const listEl = document.getElementById('drawerOrderList');
+            const cutListEl = document.getElementById('drawerCutList');
+            if (!listEl || !cutListEl) return;
+
+            if (drawerOrder.length === 0) {
+                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">Aún no se han agregado cajones.</p>`;
+                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">Agregue cajones para generar una lista de corte.</p>`;
+                return;
+            }
+
+            listEl.innerHTML = drawerOrder.map(d => {
+                const slideLabel = DRAWER_SLIDE_TYPES[d.slideType].label;
+                return `<div class="flex justify-between items-center gap-3 bg-slate-900 rounded-xl px-4 py-3">
+                    <div class="min-w-0">
+                        <span class="text-slate-200 font-semibold">${d.qty} &times; ${d.sourceLabel}</span>
+                        <div class="text-xs text-slate-400 mt-0.5">${slideLabel} \u2014 Caja: ${fmt(d.boxW_in)} Anc &times; ${fmt(d.boxD_in)} Prof &times; ${fmt(d.boxH_in)} Alt</div>
+                    </div>
+                    <button onclick="removeDrawer(${d.id})" class="shrink-0 text-slate-500 hover:text-red-400 transition text-2xl leading-none w-9 h-9 flex items-center justify-center">&times;</button>
+                </div>`;
+            }).join('');
+
+            const { grouped } = buildDrawerOrderData();
+            cutListEl.innerHTML = grouped.map(g => {
+                return `<div class="bg-slate-900 p-4 rounded-xl border-l-4 border-amber-500 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
+                    <div class="min-w-0">
+                        <h3 class="text-slate-200 font-bold">${g.part} <span class="text-xs font-normal text-slate-400">(Cant: ${g.qty})</span></h3>
+                        <p class="text-xs text-slate-400 mt-1">${g.note}</p>
+                    </div>
+                    <div class="sm:text-right shrink-0">
+                        <div class="text-lg font-mono font-bold text-amber-400">${fmt(g.dims[0])} x ${fmt(g.dims[1])}</div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+        // =============== End Drawer Boxes ================
+
         function downloadBlob(blob, filename) {
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -788,8 +1246,8 @@
         }
 
         function exportOrder() {
-            if (order.length === 0) {
-                alert('Agregue al menos un gabinete al pedido antes de exportar.');
+            if (order.length === 0 && drawerOrder.length === 0) {
+                alert('Agregue al menos un gabinete o cajón antes de exportar.');
                 return;
             }
             const format = document.getElementById('exportFormat').value;
@@ -801,15 +1259,27 @@
         }
 
         function exportToXLSX() {
-            const { orderRows, cutListRows } = buildOrderData();
-
             const wb = XLSX.utils.book_new();
-            const wsOrder = XLSX.utils.json_to_sheet(orderRows);
-            const wsCutList = XLSX.utils.json_to_sheet(cutListRows);
-            wsOrder['!cols'] = [{ wch: 28 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 10 }];
-            wsCutList['!cols'] = [{ wch: 16 }, { wch: 14 }, { wch: 14 }, { wch: 10 }, { wch: 55 }];
-            XLSX.utils.book_append_sheet(wb, wsOrder, 'Pedido');
-            XLSX.utils.book_append_sheet(wb, wsCutList, 'Lista de Corte');
+
+            if (order.length > 0) {
+                const { orderRows, cutListRows } = buildOrderData();
+                const wsOrder = XLSX.utils.json_to_sheet(orderRows);
+                const wsCutList = XLSX.utils.json_to_sheet(cutListRows);
+                wsOrder['!cols'] = [{ wch: 28 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 10 }];
+                wsCutList['!cols'] = [{ wch: 16 }, { wch: 14 }, { wch: 14 }, { wch: 10 }, { wch: 55 }];
+                XLSX.utils.book_append_sheet(wb, wsOrder, 'Pedido');
+                XLSX.utils.book_append_sheet(wb, wsCutList, 'Lista de Corte');
+            }
+
+            if (drawerOrder.length > 0) {
+                const { drawerOrderRows, drawerCutListRows } = buildDrawerOrderData();
+                const wsDrawerOrder = XLSX.utils.json_to_sheet(drawerOrderRows);
+                const wsDrawerCutList = XLSX.utils.json_to_sheet(drawerCutListRows);
+                wsDrawerOrder['!cols'] = [{ wch: 30 }, { wch: 20 }, { wch: 14 }, { wch: 16 }, { wch: 14 }, { wch: 10 }];
+                wsDrawerCutList['!cols'] = [{ wch: 22 }, { wch: 14 }, { wch: 14 }, { wch: 10 }, { wch: 55 }];
+                XLSX.utils.book_append_sheet(wb, wsDrawerOrder, 'Cajones');
+                XLSX.utils.book_append_sheet(wb, wsDrawerCutList, 'Corte de Cajones');
+            }
 
             const stamp = new Date().toISOString().slice(0, 10);
             const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
@@ -818,7 +1288,6 @@
         }
 
         function exportToPDF() {
-            const { orderRows, cutListRows } = buildOrderData();
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
 
@@ -829,30 +1298,69 @@
             doc.setTextColor(120);
             doc.text(`Generado ${new Date().toLocaleDateString()}`, 14, 24);
 
-            doc.setFontSize(11);
-            doc.setTextColor(30, 30, 30);
-            doc.text('Pedido', 14, 34);
-            doc.autoTable({
-                startY: 37,
-                head: [['Tipo de Gabinete', 'Ancho', 'Profundidad', 'Altura', 'Cant']],
-                body: orderRows.map(r => [r['Cabinet Type'], r.Width, r.Depth, r.Height, r.Quantity]),
-                theme: 'grid',
-                headStyles: { fillColor: [30, 41, 59] },
-                styles: { fontSize: 9 }
-            });
+            let cursorY = 34;
 
-            const afterOrderY = doc.lastAutoTable.finalY + 10;
-            doc.setFontSize(11);
-            doc.text('Lista de Corte', 14, afterOrderY);
-            doc.autoTable({
-                startY: afterOrderY + 3,
-                head: [['Pieza', 'Dim A', 'Dim B', 'Cant', 'Notas']],
-                body: cutListRows.map(r => [r.Part, r['Dimension A'], r['Dimension B'], r.Quantity, r.Notes]),
-                theme: 'grid',
-                headStyles: { fillColor: [30, 41, 59] },
-                styles: { fontSize: 8 },
-                columnStyles: { 4: { cellWidth: 75 } }
-            });
+            if (order.length > 0) {
+                const { orderRows, cutListRows } = buildOrderData();
+
+                doc.setFontSize(11);
+                doc.setTextColor(30, 30, 30);
+                doc.text('Pedido', 14, cursorY);
+                doc.autoTable({
+                    startY: cursorY + 3,
+                    head: [['Tipo de Gabinete', 'Ancho', 'Profundidad', 'Altura', 'Cant']],
+                    body: orderRows.map(r => [r['Tipo de Gabinete'], r.Ancho, r.Profundidad, r.Altura, r.Cantidad]),
+                    theme: 'grid',
+                    headStyles: { fillColor: [30, 41, 59] },
+                    styles: { fontSize: 9 }
+                });
+
+                cursorY = doc.lastAutoTable.finalY + 10;
+                doc.setFontSize(11);
+                doc.text('Lista de Corte', 14, cursorY);
+                doc.autoTable({
+                    startY: cursorY + 3,
+                    head: [['Pieza', 'Dim A', 'Dim B', 'Cant', 'Notas']],
+                    body: cutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Cantidad, r.Notas]),
+                    theme: 'grid',
+                    headStyles: { fillColor: [30, 41, 59] },
+                    styles: { fontSize: 8 },
+                    columnStyles: { 4: { cellWidth: 75 } }
+                });
+                cursorY = doc.lastAutoTable.finalY + 10;
+            }
+
+            if (drawerOrder.length > 0) {
+                const { drawerOrderRows, drawerCutListRows } = buildDrawerOrderData();
+
+                if (order.length > 0) doc.addPage();
+                cursorY = order.length > 0 ? 18 : cursorY;
+
+                doc.setFontSize(11);
+                doc.setTextColor(30, 30, 30);
+                doc.text('Pedido de Cajones', 14, cursorY);
+                doc.autoTable({
+                    startY: cursorY + 3,
+                    head: [['Origen', 'Guía', 'Ancho Caja', 'Prof. Caja', 'Alto Caja', 'Cant']],
+                    body: drawerOrderRows.map(r => [r['Origen'], r['Guía'], r['Ancho de Caja'], r['Profundidad de Caja'], r['Alto de Caja'], r.Cantidad]),
+                    theme: 'grid',
+                    headStyles: { fillColor: [30, 41, 59] },
+                    styles: { fontSize: 8 }
+                });
+
+                cursorY = doc.lastAutoTable.finalY + 10;
+                doc.setFontSize(11);
+                doc.text('Lista de Corte de Cajones', 14, cursorY);
+                doc.autoTable({
+                    startY: cursorY + 3,
+                    head: [['Pieza', 'Dim A', 'Dim B', 'Cant', 'Notas']],
+                    body: drawerCutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Cantidad, r.Notas]),
+                    theme: 'grid',
+                    headStyles: { fillColor: [30, 41, 59] },
+                    styles: { fontSize: 8 },
+                    columnStyles: { 4: { cellWidth: 75 } }
+                });
+            }
 
             const stamp = new Date().toISOString().slice(0, 10);
             const blob = doc.output('blob');
