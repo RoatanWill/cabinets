@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Gabinetes sin Marco 32mm</title>
+    <title><span data-i18n="appTitle">Calculadora de Gabinetes sin Marco 32mm</span></title>
     <script>
         // Suppress the Tailwind Play CDN's "should not be used in production" console warning
         (function () {
@@ -31,23 +31,28 @@
         <header class="mb-8 flex flex-col md:flex-row items-center md:items-end gap-4 border-b border-slate-800 pb-6">
             <img src="data:image/png;base64,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AOhEAAUAoCkBFACApgRQAACaEkABAGjqrQH003sDAADe6q0BFACATgRQAACaEkABAGhKAAUAoCkBFACApgRQAACaEkABAGhKAAUAoCkBFACApgRQAACaEkABAGhKAAUAoCkBFACApgRQAACaEkABAGjqrQH0p/cG8Gqf3hvAKTOeJ2b8TMCA3hpAIQJhILbZbxTUP6CbX703AF7ss/wOAXtB5ygkzB6S+O1bT0qGRnUH6EYAhb6OQoCQwLL8Vw++f98NouoTEIIACu2tWz21cLJnXT/OtJifeb11S6r6BXQhgEJfAgB7cvWjRDe8egd0JYBCH60mgLw9aDwp56etjSXlWkKfvlaUzwa8kAAKczPT+ZmI5VdqmyJ+NmJxk0I1AigAkOMmhSd2b2CsAwoAQFMCKAAATQmgAAA09cYAakwLAEBHbwygAAB0JIACANCUAAoAQFNvCqCe/gEAEMCbAug3eJqEBADQ0ZsCqOAJABDAmwKorncAgADeFEABAAjgV+8NgIeit2ynQz+ib2800YfO1N6ftT//2+tj9PoF03pjAP0sf550jk7ARyeot5/A2ad+PPP28st9/qeh6e1luqYsGFmUG6g0V32/t+uNAXRZ/iusMycfJyhgNpalg/FFOn4vb8ubx4BG2nEAZz05d31WfzsHAt28OYACANCBAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAAA0JYACANCUAAoAQFMCKAAATQmgAGP4Sf7u9RoAjwmgALEJi8B0BFCA2D6DvCbAaQIowBhKhkatqkBXv3pvAACXfJb/AuRRKE2DppZPIAQBFGBMZ8Lk1s8IokBXuuAB5vWz/NkKmv4boAstoADzSls6tXwCIWgBBRiPIAkM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" alt="Sunridge Homes" class="h-16 md:h-20 w-auto">
             <div class="text-center md:text-left">
-                <h1 class="text-2xl md:text-3xl font-bold text-amber-500 tracking-tight">Calculadora de Gabinetes sin Marco 32mm</h1>
-                <p class="text-slate-400 mt-2">Agregue gabinetes a un pedido y luego genere una lista de corte agregada / orden de compra para producción.</p>
+                <h1 class="text-2xl md:text-3xl font-bold text-amber-500 tracking-tight"><span data-i18n="appTitle">Calculadora de Gabinetes sin Marco 32mm</span></h1>
+                <p class="text-slate-400 mt-2"><span data-i18n="appSubtitle">Agregue gabinetes a un pedido y luego genere una lista de corte agregada / orden de compra para producción.</span></p>
             </div>
         </header>
 
-        <!-- Unit Toggle + Page Tabs -->
+        <!-- Language Toggle + Unit Toggle + Page Tabs -->
         <div class="flex flex-col items-center gap-3 mb-8">
             <div class="flex items-center bg-slate-800 p-1 rounded-xl border border-slate-700">
-                <button id="unitBtnIn" onclick="setUnit('in')" class="px-4 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950">PULGADAS</button>
-                <button id="unitBtnMm" onclick="setUnit('mm')" class="px-4 py-2 rounded-lg text-xs font-bold transition text-slate-400">MM (32mm)</button>
+                <button id="langBtnEs" onclick="setLang('es')" class="px-4 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950">ESPAÑOL</button>
+                <button id="langBtnEn" onclick="setLang('en')" class="px-4 py-2 rounded-lg text-xs font-bold transition text-slate-400">ENGLISH</button>
             </div>
             <div class="flex items-center bg-slate-800 p-1 rounded-xl border border-slate-700">
-                <button id="pageBtnGabinetes" onclick="switchPage('gabinetes')" class="px-5 py-2 rounded-lg text-sm font-bold transition bg-amber-500 text-slate-950">Gabinetes</button>
-                <button id="pageBtnCajones" onclick="switchPage('cajones')" class="px-5 py-2 rounded-lg text-sm font-bold transition text-slate-400">Cajones</button>
-                <button id="pageBtnCustom" onclick="switchPage('custom')" class="px-5 py-2 rounded-lg text-sm font-bold transition text-slate-400">Personalizado</button>
+                <button id="unitBtnIn" onclick="setUnit('in')" class="px-4 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950"><span data-i18n="unitIn">PULGADAS</span></button>
+                <button id="unitBtnMm" onclick="setUnit('mm')" class="px-4 py-2 rounded-lg text-xs font-bold transition text-slate-400"><span data-i18n="unitMm">MM (32mm)</span></button>
+            </div>
+            <div class="flex items-center bg-slate-800 p-1 rounded-xl border border-slate-700">
+                <button id="pageBtnGabinetes" onclick="switchPage('gabinetes')" class="px-5 py-2 rounded-lg text-sm font-bold transition bg-amber-500 text-slate-950"><span data-i18n="tabGabinetes">Gabinetes</span></button>
+                <button id="pageBtnCajones" onclick="switchPage('cajones')" class="px-5 py-2 rounded-lg text-sm font-bold transition text-slate-400"><span data-i18n="tabCajones">Cajones</span></button>
+                <button id="pageBtnCustom" onclick="switchPage('custom')" class="px-5 py-2 rounded-lg text-sm font-bold transition text-slate-400"><span data-i18n="tabPersonalizado">Personalizado</span></button>
             </div>
         </div>
+
 
         <div id="pageGabinetes">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -57,22 +62,22 @@
 
                 <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-6">
                     <div class="flex justify-between items-center border-b border-slate-700 pb-4">
-                        <h2 class="text-xl font-semibold text-slate-200">Agregar Gabinete al Pedido</h2>
+                        <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="addCabinetHeader">Agregar Gabinete al Pedido</span></h2>
                     </div>
 
                     <div class="space-y-4">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tipo de Gabinete</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="cabinetType">Tipo de Gabinete</span></label>
                             <select id="cabType" onchange="applyTypeDefaults()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
-                                <option value="standardBase">Base Estándar (24" de Profundidad)</option>
-                                <option value="deepBase12">Base Profunda de 12"</option>
-                                <option value="vanity21">Tocador de Baño (21" de Profundidad)</option>
-                                <option value="upper12">Superior Profundo de 12" (sin traveseros)</option>
+                                <option value="standardBase" data-i18n="optStandardBase">Base Estándar (24" de Profundidad)</option>
+                                <option value="deepBase12" data-i18n="optDeepBase12">Base Profunda de 12"</option>
+                                <option value="vanity21" data-i18n="optVanity21">Tocador de Baño (21" de Profundidad)</option>
+                                <option value="upper12" data-i18n="optUpper12">Superior Profundo de 12" (sin traveseros)</option>
                             </select>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Ancho de Gabinete Preestablecido</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="presetWidth">Ancho de Gabinete Preestablecido</span></label>
                             <select id="widthPreset" onchange="applyPresetWidth()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                 <option value="12">12" (305 mm)</option>
                                 <option value="15">15" (381 mm)</option>
@@ -80,27 +85,27 @@
                                 <option value="24" selected>24" (610 mm)</option>
                                 <option value="30">30" (762 mm)</option>
                                 <option value="36">36" (914 mm)</option>
-                                <option value="custom">-- Ancho Personalizado --</option>
+                                <option value="custom" data-i18n="optCustomWidth">-- Ancho Personalizado --</option>
                             </select>
                         </div>
 
                         <div class="grid grid-cols-3 gap-3">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Ancho</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="lblAncho">Ancho</span></label>
                                 <input type="number" inputmode="decimal" id="cabWidth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Profundidad</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="lblProfundidad">Profundidad</span></label>
                                 <input type="number" inputmode="decimal" id="cabDepth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Altura</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="lblAltura">Altura</span></label>
                                 <input type="number" inputmode="decimal" id="cabHeight" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Cantidad Requerida</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="qtyRequired">Cantidad Requerida</span></label>
                             <select id="cabQty" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                 <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
                                 <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
@@ -109,134 +114,134 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Configuración de Cajones</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="drawerConfig">Configuración de Cajones</span></label>
                             <select id="cabDrawerConfig" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
-                                <option value="doorOnly">Solo Puerta (sin cajones)</option>
-                                <option value="doorPlus4">Puerta + 1 Cajón de 4"</option>
-                                <option value="three8">3 Cajones de 8"</option>
-                                <option value="mixed">1 Cajón de 4", 1 de 8", 1 de 12"</option>
-                                <option value="two12">2 Cajones de 12"</option>
+                                <option value="doorOnly" data-i18n="optDoorOnly">Solo Puerta (sin cajones)</option>
+                                <option value="doorPlus4" data-i18n="optDoorPlus4">Puerta + 1 Cajón de 4"</option>
+                                <option value="three8" data-i18n="optThree8">3 Cajones de 8"</option>
+                                <option value="mixed" data-i18n="optMixed">1 Cajón de 4", 1 de 8", 1 de 12"</option>
+                                <option value="two12" data-i18n="optTwo12">2 Cajones de 12"</option>
                             </select>
-                            <p class="text-[10px] text-slate-600 mt-1">Solo es una etiqueta de referencia — genere los cajones reales en la pestaña Cajones.</p>
+                            <p class="text-[10px] text-slate-600 mt-1"><span data-i18n="drawerConfigNote">Solo es una etiqueta de referencia — genere los cajones reales en la pestaña Cajones.</span></p>
                         </div>
 
                         <button onclick="addToOrder()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-3 transition">
-                            + Agregar al Pedido
+                            <span data-i18n="btnAddToOrder">+ Agregar al Pedido</span>
                         </button>
                     </div>
                 </div>
 
                 <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-4">
-                    <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3">Calibración de Material y Ensamblaje <span class="text-slate-500 normal-case font-normal">(aplica a todo el pedido)</span></h3>
+                    <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3"><span data-i18n="calibHeader">Calibración de Material y Ensamblaje</span> <span class="text-slate-500 normal-case font-normal"><span data-i18n="calibAppliesAll">(aplica a todo el pedido)</span></span></h3>
 
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 mb-1">Espesor del Cuerpo</label>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="sideThick">Espesor del Cuerpo</span></label>
                             <input type="number" inputmode="decimal" id="sideThick" step="0.01" onchange="renderOrder()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-amber-500 transition">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 mb-1">Espesor Panel Trasero</label>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="backThickLbl">Espesor Panel Trasero</span></label>
                             <input type="number" inputmode="decimal" id="backThick" step="0.01" onchange="renderOrder()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-sm text-slate-200 focus:outline-none focus:border-amber-500 transition">
                         </div>
                     </div>
 
                     <div class="grid grid-cols-3 gap-2">
                         <div>
-                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Profundidad de Ranura</label>
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="grooveDepthLbl">Profundidad de Ranura</span></label>
                             <input type="number" inputmode="decimal" id="grooveDepth" step="0.01" onchange="renderOrder()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro de Ranura</label>
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="grooveInsetLbl">Retiro de Ranura</span></label>
                             <input type="number" inputmode="decimal" id="grooveInset" step="0.01" onchange="renderOrder()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Ancho de Travesero</label>
+                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="stretcherWidthLbl">Ancho de Travesero</span></label>
                             <input type="number" inputmode="decimal" id="stretcherWidth" step="0.01" onchange="renderOrder()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                         </div>
                     </div>
 
                     <div class="border-t border-slate-700/50 pt-4">
-                        <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Láminas y Anidado</h4>
+                        <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="sheetGoodsNesting">Láminas y Anidado</span></h4>
                         <div class="grid grid-cols-3 gap-2">
                             <div>
-                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Ancho de Lámina</label>
+                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="sheetWidthLbl">Ancho de Lámina</span></label>
                                 <input type="number" inputmode="decimal" id="sheetWidth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Alto de Lámina</label>
+                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="sheetHeightLbl">Alto de Lámina</span></label>
                                 <input type="number" inputmode="decimal" id="sheetHeight" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Corte de Sierra (Kerf)</label>
+                                <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="kerfLbl">Corte de Sierra (Kerf)</span></label>
                                 <input type="number" inputmode="decimal" id="kerf" step="0.001" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                         </div>
                     </div>
 
                     <button onclick="applyDefaults(currentUnit); renderOrder();" class="w-full text-xs font-semibold text-slate-400 hover:text-amber-500 transition border border-slate-700 hover:border-amber-500/50 rounded-xl py-2">
-                        Restablecer a valores estándar de taller
+                        <span data-i18n="btnResetShopDefaults">Restablecer a valores estándar de taller</span>
                     </button>
                 </div>
 
                 <!-- Admin: Editable Part Descriptions -->
                 <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                     <details>
-                        <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none">Admin: Editar Descripciones de Piezas</summary>
+                        <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none"><span data-i18n="adminHeader">Admin: Editar Descripciones de Piezas</span></summary>
                         <div class="mt-4 space-y-3">
-                            <p class="text-[11px] text-slate-500">Los marcadores se completan automáticamente según su calibración: {grooveDepth} {grooveInset} {sideThick} {backThick} {stretcherWidth}</p>
+                            <p class="text-[11px] text-slate-500"><span data-i18n="adminPlaceholderNote">Los marcadores se completan automáticamente según su calibración: {grooveDepth} {grooveInset} {sideThick} {backThick} {stretcherWidth}</span></p>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Panel Lateral</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partSidePanel">Panel Lateral</span></label>
                                 <textarea id="note_side" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Travesero Superior Frontal</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partFrontTopStretcher">Travesero Superior Frontal</span></label>
                                 <textarea id="note_frontTop" rows="1" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Travesero Superior Trasero</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partBackTopStretcher">Travesero Superior Trasero</span></label>
                                 <textarea id="note_backTop" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Travesero Superior Posterior</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partTopRearStretcher">Travesero Superior Posterior</span></label>
                                 <textarea id="note_topRear" rows="1" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Travesero Inferior Posterior</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partBottomRearStretcher">Travesero Inferior Posterior</span></label>
                                 <textarea id="note_bottomRear" rows="1" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Panel Base</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partBasePanel">Panel Base</span></label>
                                 <textarea id="note_base" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Panel Superior</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partTopPanel">Panel Superior</span></label>
                                 <textarea id="note_top" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Panel Inferior</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partBottomPanel">Panel Inferior</span></label>
                                 <textarea id="note_bottom" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 mb-1">Panel Trasero</label>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1"><span data-i18n="partBackPanel">Panel Trasero</span></label>
                                 <textarea id="note_back" rows="2" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition"></textarea>
                             </div>
 
                             <div class="flex gap-2 pt-1">
-                                <button id="saveNotesBtn" onclick="saveNoteTemplates()" class="flex-1 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg py-2 text-xs transition">Guardar Descripciones</button>
-                                <button onclick="resetNoteTemplates()" class="flex-1 border border-slate-700 hover:border-amber-500/50 text-slate-400 hover:text-amber-500 rounded-lg py-2 text-xs transition">Restablecer Predeterminado</button>
+                                <button id="saveNotesBtn" onclick="saveNoteTemplates()" class="flex-1 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg py-2 text-xs transition"><span data-i18n="btnSaveDescriptions">Guardar Descripciones</span></button>
+                                <button onclick="resetNoteTemplates()" class="flex-1 border border-slate-700 hover:border-amber-500/50 text-slate-400 hover:text-amber-500 rounded-lg py-2 text-xs transition"><span data-i18n="btnResetDefault">Restablecer Predeterminado</span></button>
                             </div>
-                            <p class="text-[10px] text-slate-600">Las descripciones guardadas se conservan entre sesiones en este dispositivo.</p>
+                            <p class="text-[10px] text-slate-600"><span data-i18n="savedDescPersist">Las descripciones guardadas se conservan entre sesiones en este dispositivo.</span></p>
                         </div>
                     </details>
                 </div>
 
                 <!-- Assumptions note -->
                 <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 text-xs text-slate-400 leading-relaxed">
-                    <span class="text-amber-500/90 font-semibold">Valores estándar:</span>
-                    Material de cuerpo de 3/4", panel trasero de 1/4" alojado en una ranura de 5/16" de profundidad (1/16" extra de holgura para que el panel se mueva), colocada a 3/4" del borde posterior para librar el travesero/base de 3/4", travesero nominal de 4".
+                    <span class="text-amber-500/90 font-semibold"><span data-i18n="standardDefaults">Valores estándar:</span></span>
+                    <span data-i18n="assumptionsBody">Material de cuerpo de 3/4", panel trasero de 1/4" alojado en una ranura de 5/16" de profundidad (1/16" extra de holgura para que el panel se mueva), colocada a 3/4" del borde posterior para librar el travesero/base de 3/4", travesero nominal de 4".
                     Gabinetes base: el panel trasero queda sujeto arriba y abajo — tanto el panel base como el travesero superior trasero llevan una ranura coincidente al mismo retiro, asegurando el panel en su lugar. Cuatro traveseros de 4" en total: superior frontal, superior trasero (con ranura), superior posterior e inferior posterior, todos de ancho completo — ya no hay travesero angosto. El panel base se atornilla a los laterales con tornillos ocultos.
-                    Superiores: sin traveseros — un panel superior y un panel inferior, idénticos, cada uno con ranura para alojar el panel trasero.
+                    Superiores: sin traveseros — un panel superior y un panel inferior, idénticos, cada uno con ranura para alojar el panel trasero.</span>
                 </div>
             </div>
 
@@ -246,28 +251,28 @@
                 <!-- Current Order -->
                 <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 border-b border-slate-700 pb-4 mb-4">
-                        <h2 class="text-xl font-semibold text-slate-200">Pedido Actual</h2>
+                        <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="currentOrder">Pedido Actual</span></h2>
                         <div class="flex flex-wrap items-center gap-2">
                             <select id="exportFormat" class="text-xs font-semibold bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                 <option value="pdf" selected>PDF</option>
                                 <option value="xlsx">XLSX</option>
                             </select>
-                            <button onclick="exportOrder()" class="text-xs font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 transition rounded-lg px-4 py-2">Exportar Pedido &#8595;</button>
-                            <button onclick="clearOrder()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2">Vaciar Pedido</button>
+                            <button onclick="exportOrder()" class="text-xs font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 transition rounded-lg px-4 py-2"><span data-i18n="exportOrderBtn">Exportar Pedido</span> &#8595;</button>
+                            <button onclick="clearOrder()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2"><span data-i18n="clearOrderBtn">Vaciar Pedido</span></button>
                         </div>
                     </div>
                     <div id="orderList" class="space-y-2"></div>
-                    <p class="text-[11px] text-slate-500 mt-3">"Exportar Pedido" incluye gabinetes, cajones y piezas personalizadas en un solo archivo. En el celular, elija PDF para una versión que abre directamente en el navegador. XLSX puede mostrar una ventana de guardar/compartir en lugar de descargar directamente, según su navegador.</p>
+                    <p class="text-[11px] text-slate-500 mt-3"><span data-i18n="exportOrderNote">"Exportar Pedido" incluye gabinetes, cajones y piezas personalizadas en un solo archivo. En el celular, elija PDF para una versión que abre directamente en el navegador. XLSX puede mostrar una ventana de guardar/compartir en lugar de descargar directamente, según su navegador.</span></p>
                 </div>
 
                 <!-- Cut List / Purchase Order -->
                 <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                     <div class="flex justify-between items-center border-b border-slate-700 pb-4 mb-6">
-                        <h2 class="text-xl font-semibold text-slate-200">Lista de Corte / Orden de Compra Generada</h2>
-                        <span id="unitLabel" class="text-[10px] uppercase font-bold tracking-wider bg-slate-900 px-2.5 py-1 rounded text-amber-500/90 border border-slate-700">pulg</span>
+                        <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="cutListGenerated">Lista de Corte / Orden de Compra Generada</span></h2>
+                        <span id="unitLabel" class="text-[10px] uppercase font-bold tracking-wider bg-slate-900 px-2.5 py-1 rounded text-amber-500/90 border border-slate-700"><span data-i18n="unitLabelIn">pulg</span></span>
                     </div>
                     <div id="cutList" class="space-y-3"></div>
-                    <button onclick="openSheetLayout()" class="w-full mt-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition">Optimizar Diseño de Lámina</button>
+                    <button onclick="openSheetLayout()" class="w-full mt-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition"><span data-i18n="optimizeSheetLayout">Optimizar Diseño de Lámina</span></button>
                 </div>
             </div>
         </div>
@@ -277,8 +282,8 @@
         <div id="pageCajones" class="hidden">
         <!-- Drawer Boxes Section -->
         <div class="mt-2">
-            <h2 class="text-2xl font-bold text-amber-500 tracking-tight mb-1">Cajones de Gaveta</h2>
-            <p class="text-slate-400 text-sm mb-6">Genere cajones a partir de los gabinetes del pedido, o agréguelos manualmente. Ensamble por tornillo de bolsillo, fondo capturado en ranura.</p>
+            <h2 class="text-2xl font-bold text-amber-500 tracking-tight mb-1"><span data-i18n="drawerBoxesHeader">Cajones de Gaveta</span></h2>
+            <p class="text-slate-400 text-sm mb-6"><span data-i18n="drawerBoxesSubtitle">Genere cajones a partir de los gabinetes del pedido, o agréguelos manualmente. Ensamble por tornillo de bolsillo, fondo capturado en ranura.</span></p>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
@@ -287,83 +292,83 @@
 
                     <!-- Generate from cabinet -->
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-4">
-                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3">Generar desde Gabinete del Pedido</h3>
+                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3"><span data-i18n="generateFromCabinet">Generar desde Gabinete del Pedido</span></h3>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Gabinete</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="gabineteLbl">Gabinete</span></label>
                             <select id="drawerSourceCabinet" onchange="updateDrawerConfigPreview()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
-                                <option value="">-- Agregue gabinetes al pedido primero --</option>
+                                <option value="" data-i18n="optNoCabinetsYet">-- Agregue gabinetes al pedido primero --</option>
                             </select>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Guía</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="guiaLbl">Guía</span></label>
                             <select id="drawerSlideTypeAuto" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
-                                <option value="undermount">Oculta (Undermount)</option>
-                                <option value="sidemount">Lateral (Side-Mount)</option>
+                                <option value="undermount" data-i18n="optUndermount">Oculta (Undermount)</option>
+                                <option value="sidemount" data-i18n="optSidemount">Lateral (Side-Mount)</option>
                             </select>
                         </div>
 
                         <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-3">
-                            <p id="drawerConfigPreview" class="text-xs text-slate-400">Seleccione un gabinete para ver su configuración de cajones.</p>
+                            <p id="drawerConfigPreview" class="text-xs text-slate-400"><span data-i18n="selectCabinetPreview">Seleccione un gabinete para ver su configuración de cajones.</span></p>
                             <button onclick="addDrawersFromCabinetConfig()" class="w-full mt-3 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition">
-                                + Generar según Configuración del Gabinete
+                                <span data-i18n="btnGenerateFromConfig">+ Generar según Configuración del Gabinete</span>
                             </button>
                         </div>
 
                         <div class="border-t border-slate-700/50 pt-4">
-                            <p class="text-[11px] text-slate-500 mb-2">O, para un banco de cajones parejos (sin usar la configuración del gabinete):</p>
+                            <p class="text-[11px] text-slate-500 mb-2"><span data-i18n="orEvenBank">O, para un banco de cajones parejos (sin usar la configuración del gabinete):</span></p>
                             <div class="grid grid-cols-2 gap-3">
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"># de Cajones</label>
+                                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="numDrawers"># de Cajones</span></label>
                                     <input type="number" inputmode="numeric" id="drawerCountPerCab" value="1" min="1" step="1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                 </div>
                                 <div class="flex items-end">
                                     <button onclick="addDrawersFromCabinet()" class="w-full bg-slate-700 hover:bg-slate-600 text-slate-200 font-bold rounded-xl py-2.5 text-sm transition">
-                                        Generar Parejo
+                                        <span data-i18n="btnGenerateEven">Generar Parejo</span>
                                     </button>
                                 </div>
                             </div>
-                            <p class="text-[11px] text-slate-500 mt-2">La altura se reparte en partes iguales usando las vistas/espacios calibrados abajo.</p>
+                            <p class="text-[11px] text-slate-500 mt-2"><span data-i18n="heightSplitNote">La altura se reparte en partes iguales usando las vistas/espacios calibrados abajo.</span></p>
                         </div>
                     </div>
 
                     <!-- Manual entry -->
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-4">
-                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3">Agregar Cajón Manualmente</h3>
+                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3"><span data-i18n="addDrawerManualHeader">Agregar Cajón Manualmente</span></h3>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Tamaño de Cajón</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="drawerSize">Tamaño de Cajón</span></label>
                             <select id="drawerSizePreset" onchange="applyDrawerSizePreset()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-amber-500 transition">
-                                <option value="custom">Personalizado (ingrese alto abajo)</option>
-                                <option value="small">Pequeño</option>
-                                <option value="medium">Mediano</option>
-                                <option value="large">Grande</option>
+                                <option value="custom" data-i18n="optCustomEnterHeight">Personalizado (ingrese alto abajo)</option>
+                                <option value="small" data-i18n="optSmall">Pequeño</option>
+                                <option value="medium" data-i18n="optMedium">Mediano</option>
+                                <option value="large" data-i18n="optLarge">Grande</option>
                             </select>
                         </div>
                         <div class="grid grid-cols-2 gap-3">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Ancho de Apertura</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="openingWidth">Ancho de Apertura</span></label>
                                 <input type="number" inputmode="decimal" id="drawerOpenW" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Alto de Apertura</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="openingHeight">Alto de Apertura</span></label>
                                 <input type="number" inputmode="decimal" id="drawerOpenH" step="0.01" onchange="document.getElementById('drawerSizePreset').value='custom'" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-3">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Profundidad de Gabinete</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="cabinetDepthLbl">Profundidad de Gabinete</span></label>
                                 <input type="number" inputmode="decimal" id="drawerCabDepth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Guía</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="guiaLbl">Guía</span></label>
                                 <select id="drawerSlideTypeManual" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
-                                    <option value="undermount">Oculta (Undermount)</option>
-                                    <option value="sidemount">Lateral (Side-Mount)</option>
+                                    <option value="undermount" data-i18n="optUndermount">Oculta (Undermount)</option>
+                                    <option value="sidemount" data-i18n="optSidemount">Lateral (Side-Mount)</option>
                                 </select>
                             </div>
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Cantidad</label>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="quantityLbl">Cantidad</span></label>
                             <select id="drawerQty" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                 <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
                                 <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
@@ -371,133 +376,133 @@
                             </select>
                         </div>
                         <button onclick="addDrawerManual()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-3 transition">
-                            + Agregar Cajón
+                            <span data-i18n="btnAddDrawer">+ Agregar Cajón</span>
                         </button>
                     </div>
 
                     <!-- Calibration -->
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                         <details>
-                            <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none">Calibración de Cajones y Guías</summary>
+                            <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none"><span data-i18n="drawerCalibHeader">Calibración de Cajones y Guías</span></summary>
                             <div class="mt-4 space-y-4">
                                 <div class="grid grid-cols-2 gap-3">
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Espesor de Caja</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="boxThickLbl">Espesor de Caja</span></label>
                                         <input type="number" inputmode="decimal" id="drawerBoxThick" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Espesor de Fondo</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="bottomThickLbl">Espesor de Fondo</span></label>
                                         <input type="number" inputmode="decimal" id="drawerBottomThick" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Ranura de Fondo</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="bottomGrooveLbl">Ranura de Fondo</span></label>
                                         <input type="number" inputmode="decimal" id="drawerBottomGroove" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro de Ranura</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="grooveInsetLbl">Retiro de Ranura</span></label>
                                         <input type="number" inputmode="decimal" id="drawerBottomInset" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                 </div>
 
                                 <div class="border-t border-slate-700/50 pt-3">
-                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Láminas y Corte</h4>
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="sheetsAndCut">Láminas y Corte</span></h4>
                                     <div class="grid grid-cols-3 gap-2">
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Ancho de Lámina</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="sheetWidthLbl">Ancho de Lámina</span></label>
                                             <input type="number" inputmode="decimal" id="drawerSheetWidth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Alto de Lámina</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="sheetHeightLbl">Alto de Lámina</span></label>
                                             <input type="number" inputmode="decimal" id="drawerSheetHeight" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Corte de Sierra</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="kerfLblShort">Corte de Sierra</span></label>
                                             <input type="number" inputmode="decimal" id="drawerKerf" step="0.001" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="border-t border-slate-700/50 pt-3">
-                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Tamaños de Cajón (Pequeño / Mediano / Grande)</h4>
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="drawerSizesHeader">Tamaños de Cajón (Pequeño / Mediano / Grande)</span></h4>
                                     <div class="grid grid-cols-3 gap-2">
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Pequeño</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="optSmall">Pequeño</span></label>
                                             <input type="number" inputmode="decimal" id="drawerSizeSmall" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Mediano</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="optMedium">Mediano</span></label>
                                             <input type="number" inputmode="decimal" id="drawerSizeMedium" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Grande</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="optLarge">Grande</span></label>
                                             <input type="number" inputmode="decimal" id="drawerSizeLarge" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                     </div>
-                                    <p class="text-[10px] text-slate-600 mt-1">Estos valores llenan el campo "Alto de Apertura" al elegir un tamaño en Agregar Cajón Manualmente.</p>
+                                    <p class="text-[10px] text-slate-600 mt-1"><span data-i18n="sizesFillNote">Estos valores llenan el campo "Alto de Apertura" al elegir un tamaño en Agregar Cajón Manualmente.</span></p>
                                 </div>
 
                                 <div class="border-t border-slate-700/50 pt-3">
-                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2">Reparto de Alturas (Generar desde Gabinete)</h4>
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-2"><span data-i18n="heightSplitHeader">Reparto de Alturas (Generar desde Gabinete)</span></h4>
                                     <div class="grid grid-cols-3 gap-2">
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Vista Superior</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="revealTop">Vista Superior</span></label>
                                             <input type="number" inputmode="decimal" id="drawerRevealTop" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Vista Inferior</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="revealBottom">Vista Inferior</span></label>
                                             <input type="number" inputmode="decimal" id="drawerRevealBottom" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Espacio Entre</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="gapBetween">Espacio Entre</span></label>
                                             <input type="number" inputmode="decimal" id="drawerGapBetween" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="border-t border-slate-700/50 pt-3 space-y-3">
-                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Guía Oculta (Undermount)</h4>
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider"><span data-i18n="undermountHeader">Guía Oculta (Undermount)</span></h4>
                                     <div class="grid grid-cols-3 gap-2">
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Ancho (Total)</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="widthClearTotal">Retiro Ancho (Total)</span></label>
                                             <input type="number" inputmode="decimal" id="umWidthClear" step="0.001" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Alto</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="heightClear">Retiro Alto</span></label>
                                             <input type="number" inputmode="decimal" id="umHeightClear" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Fondo</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="depthSetback">Retiro Fondo</span></label>
                                             <input type="number" inputmode="decimal" id="umDepthSetback" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                     </div>
-                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Guía Lateral (Side-Mount)</h4>
+                                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider"><span data-i18n="sidemountHeader">Guía Lateral (Side-Mount)</span></h4>
                                     <div class="grid grid-cols-3 gap-2">
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Ancho (Total)</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="widthClearTotal">Retiro Ancho (Total)</span></label>
                                             <input type="number" inputmode="decimal" id="smWidthClear" step="0.001" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Alto</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="heightClear">Retiro Alto</span></label>
                                             <input type="number" inputmode="decimal" id="smHeightClear" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                         <div>
-                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Retiro Fondo</label>
+                                            <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="depthSetback">Retiro Fondo</span></label>
                                             <input type="number" inputmode="decimal" id="smDepthSetback" step="0.01" onchange="renderDrawers()" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                         </div>
                                     </div>
                                 </div>
 
                                 <button onclick="applyDrawerDefaults(currentUnit); renderDrawers();" class="w-full text-xs font-semibold text-slate-400 hover:text-amber-500 transition border border-slate-700 hover:border-amber-500/50 rounded-xl py-2">
-                                    Restablecer a valores estándar
+                                    <span data-i18n="btnResetStandard">Restablecer a valores estándar</span>
                                 </button>
                             </div>
                         </details>
                     </div>
 
                     <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 text-xs text-slate-400 leading-relaxed">
-                        <span class="text-amber-500/90 font-semibold">Ensamble estándar:</span>
-                        Frente y fondo (trasero) cortados entre los costados, unidos con tornillo de bolsillo. Costados de largo completo (profundidad de la caja). Fondo capturado en ranura en los cuatro lados.
-                        Los retiros de guía son valores de referencia de fábrica — confirme con la ficha técnica de su guía específica antes de cortar. Use "Optimizar Diseño de Lámina" abajo para anidar las piezas de cajones por separado de los gabinetes.
+                        <span class="text-amber-500/90 font-semibold"><span data-i18n="drawerStdAssembly">Ensamble estándar:</span></span>
+                        <span data-i18n="drawerAssemblyBody">Frente y fondo (trasero) cortados entre los costados, unidos con tornillo de bolsillo. Costados de largo completo (profundidad de la caja). Fondo capturado en ranura en los cuatro lados.
+                        Los retiros de guía son valores de referencia de fábrica — confirme con la ficha técnica de su guía específica antes de cortar. Use "Optimizar Diseño de Lámina" abajo para anidar las piezas de cajones por separado de los gabinetes.</span>
                     </div>
                 </div>
 
@@ -505,26 +510,26 @@
                 <div class="lg:col-span-7 space-y-6">
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 border-b border-slate-700 pb-4 mb-4">
-                            <h2 class="text-xl font-semibold text-slate-200">Pedido de Cajones</h2>
+                            <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="drawerOrderHeader">Pedido de Cajones</span></h2>
                             <div class="flex flex-wrap items-center gap-2">
                                 <select id="drawerExportFormat" class="text-xs font-semibold bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     <option value="pdf" selected>PDF</option>
                                     <option value="xlsx">XLSX</option>
                                 </select>
-                                <button onclick="exportDrawerOrder()" class="text-xs font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 transition rounded-lg px-4 py-2">Exportar Cajones &#8595;</button>
-                                <button onclick="clearDrawers()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2">Vaciar Cajones</button>
+                                <button onclick="exportDrawerOrder()" class="text-xs font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 transition rounded-lg px-4 py-2"><span data-i18n="exportDrawersBtn">Exportar Cajones</span> &#8595;</button>
+                                <button onclick="clearDrawers()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2"><span data-i18n="clearDrawersBtn">Vaciar Cajones</span></button>
                             </div>
                         </div>
                         <div id="drawerOrderList" class="space-y-2"></div>
-                        <p class="text-[11px] text-slate-500 mt-3">También se incluyen automáticamente al usar "Exportar Pedido" en la pestaña Gabinetes, como sección adicional del mismo archivo.</p>
+                        <p class="text-[11px] text-slate-500 mt-3"><span data-i18n="alsoIncludedNote">También se incluyen automáticamente al usar "Exportar Pedido" en la pestaña Gabinetes, como sección adicional del mismo archivo.</span></p>
                     </div>
 
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                         <div class="flex justify-between items-center border-b border-slate-700 pb-4 mb-6">
-                            <h2 class="text-xl font-semibold text-slate-200">Lista de Corte de Cajones</h2>
+                            <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="drawerCutListHeader">Lista de Corte de Cajones</span></h2>
                         </div>
                         <div id="drawerCutList" class="space-y-3"></div>
-                        <button onclick="openDrawerSheetLayout()" class="w-full mt-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition">Optimizar Diseño de Lámina</button>
+                        <button onclick="openDrawerSheetLayout()" class="w-full mt-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition"><span data-i18n="optimizeSheetLayout">Optimizar Diseño de Lámina</span></button>
                     </div>
                 </div>
             </div>
@@ -535,8 +540,8 @@
         <div id="pageCustom" class="hidden">
         <!-- Custom Parts Section -->
         <div class="mt-2">
-            <h2 class="text-2xl font-bold text-amber-500 tracking-tight mb-1">Piezas Personalizadas</h2>
-            <p class="text-slate-400 text-sm mb-6">Agregue cualquier pieza que no encaje en Gabinetes o Cajones — rellenos, paneles, repisas, etc. — con sus propias dimensiones y espesor de material.</p>
+            <h2 class="text-2xl font-bold text-amber-500 tracking-tight mb-1"><span data-i18n="customPartsHeader">Piezas Personalizadas</span></h2>
+            <p class="text-slate-400 text-sm mb-6"><span data-i18n="customPartsSubtitle">Agregue cualquier pieza que no encaje en Gabinetes o Cajones — rellenos, paneles, repisas, etc. — con sus propias dimensiones y espesor de material.</span></p>
 
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
@@ -544,28 +549,28 @@
                 <div class="lg:col-span-5 space-y-6">
 
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50 space-y-4">
-                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3">Agregar Pieza</h3>
+                        <h3 class="text-sm font-medium text-amber-500/90 uppercase tracking-wider border-b border-slate-700 pb-3"><span data-i18n="addPartHeader">Agregar Pieza</span></h3>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Nombre de Pieza</label>
-                            <input type="text" id="customPartName" placeholder="Ej: Repisa, Relleno, Panel..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="partNameLbl">Nombre de Pieza</span></label>
+                            <input type="text" id="customPartName" placeholder="Ej: Repisa, Relleno, Panel..." data-i18n-ph="phPartName" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                         </div>
                         <div class="grid grid-cols-3 gap-3">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Ancho</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="lblAncho">Ancho</span></label>
                                 <input type="number" inputmode="decimal" id="customPartW" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Alto/Largo</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="widthLarge">Alto/Largo</span></label>
                                 <input type="number" inputmode="decimal" id="customPartH" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Espesor</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="thicknessLbl">Espesor</span></label>
                                 <input type="number" inputmode="decimal" id="customPartThick" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-3">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Cantidad</label>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="quantityLbl">Cantidad</span></label>
                                 <select id="customPartQty" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
                                     <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
@@ -573,44 +578,44 @@
                                 </select>
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Notas (opcional)</label>
-                                <input type="text" id="customPartNote" placeholder="Ej: bordes con cinta" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5"><span data-i18n="notesOptional">Notas (opcional)</span></label>
+                                <input type="text" id="customPartNote" placeholder="Ej: bordes con cinta" data-i18n-ph="phEdgeband" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                             </div>
                         </div>
                         <button onclick="addCustomPart()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-3 transition">
-                            + Agregar Pieza
+                            <span data-i18n="btnAddPart">+ Agregar Pieza</span>
                         </button>
                     </div>
 
                     <!-- Sheet Goods Calibration -->
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                         <details>
-                            <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none">Calibración de Láminas</summary>
+                            <summary class="cursor-pointer text-sm font-medium text-amber-500/90 uppercase tracking-wider select-none"><span data-i18n="sheetCalibHeader">Calibración de Láminas</span></summary>
                             <div class="mt-4 space-y-4">
                                 <div class="grid grid-cols-3 gap-2">
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Ancho de Lámina</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="sheetWidthLbl">Ancho de Lámina</span></label>
                                         <input type="number" inputmode="decimal" id="customSheetWidth" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Alto de Lámina</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="sheetHeightLbl">Alto de Lámina</span></label>
                                         <input type="number" inputmode="decimal" id="customSheetHeight" step="0.01" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                     <div>
-                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1">Corte de Sierra</label>
+                                        <label class="block text-[10px] font-bold text-slate-400 uppercase mb-1"><span data-i18n="kerfLblShort">Corte de Sierra</span></label>
                                         <input type="number" inputmode="decimal" id="customKerf" step="0.001" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     </div>
                                 </div>
                                 <button onclick="applyCustomDefaults(currentUnit); renderCustomParts();" class="w-full text-xs font-semibold text-slate-400 hover:text-amber-500 transition border border-slate-700 hover:border-amber-500/50 rounded-xl py-2">
-                                    Restablecer a valores estándar
+                                    <span data-i18n="btnResetStandard">Restablecer a valores estándar</span>
                                 </button>
                             </div>
                         </details>
                     </div>
 
                     <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4 text-xs text-slate-400 leading-relaxed">
-                        <span class="text-amber-500/90 font-semibold">Uso:</span>
-                        Cada pieza se agrega tal cual a la lista de corte — no se descompone en más partes. El espesor de cada pieza se usa para agruparla en el Optimizador de Diseño de Lámina junto con piezas del mismo grosor.
+                        <span class="text-amber-500/90 font-semibold"><span data-i18n="customUso">Uso:</span></span>
+                        <span data-i18n="customUsoBody">Cada pieza se agrega tal cual a la lista de corte — no se descompone en más partes. El espesor de cada pieza se usa para agruparla en el Optimizador de Diseño de Lámina junto con piezas del mismo grosor.</span>
                     </div>
                 </div>
 
@@ -618,26 +623,26 @@
                 <div class="lg:col-span-7 space-y-6">
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                         <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 border-b border-slate-700 pb-4 mb-4">
-                            <h2 class="text-xl font-semibold text-slate-200">Piezas Personalizadas</h2>
+                            <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="customPartsHeader">Piezas Personalizadas</span></h2>
                             <div class="flex flex-wrap items-center gap-2">
                                 <select id="customExportFormat" class="text-xs font-semibold bg-slate-900 border border-slate-700 rounded-lg px-2 py-2 text-slate-200 focus:outline-none focus:border-amber-500 transition">
                                     <option value="pdf" selected>PDF</option>
                                     <option value="xlsx">XLSX</option>
                                 </select>
-                                <button onclick="exportCustomOrder()" class="text-xs font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 transition rounded-lg px-4 py-2">Exportar Piezas &#8595;</button>
-                                <button onclick="clearCustomParts()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2">Vaciar Piezas</button>
+                                <button onclick="exportCustomOrder()" class="text-xs font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 transition rounded-lg px-4 py-2"><span data-i18n="exportPiecesBtn">Exportar Piezas</span> &#8595;</button>
+                                <button onclick="clearCustomParts()" class="text-xs font-semibold text-slate-500 hover:text-red-400 transition px-2 py-2"><span data-i18n="clearPiecesBtn">Vaciar Piezas</span></button>
                             </div>
                         </div>
                         <div id="customPartList" class="space-y-2"></div>
-                        <p class="text-[11px] text-slate-500 mt-3">También se incluyen automáticamente al usar "Exportar Pedido" en la pestaña Gabinetes, como sección adicional del mismo archivo.</p>
+                        <p class="text-[11px] text-slate-500 mt-3"><span data-i18n="alsoIncludedNote">También se incluyen automáticamente al usar "Exportar Pedido" en la pestaña Gabinetes, como sección adicional del mismo archivo.</span></p>
                     </div>
 
                     <div class="bg-slate-800 p-4 sm:p-6 rounded-2xl shadow-xl border border-slate-700/50">
                         <div class="flex justify-between items-center border-b border-slate-700 pb-4 mb-6">
-                            <h2 class="text-xl font-semibold text-slate-200">Lista de Corte Personalizada</h2>
+                            <h2 class="text-xl font-semibold text-slate-200"><span data-i18n="customCutListHeader">Lista de Corte Personalizada</span></h2>
                         </div>
                         <div id="customCutList" class="space-y-3"></div>
-                        <button onclick="openCustomSheetLayout()" class="w-full mt-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition">Optimizar Diseño de Lámina</button>
+                        <button onclick="openCustomSheetLayout()" class="w-full mt-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-xl py-2.5 text-sm transition"><span data-i18n="optimizeSheetLayout">Optimizar Diseño de Lámina</span></button>
                     </div>
                 </div>
             </div>
@@ -650,47 +655,328 @@
     <div id="sheetModal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50" onclick="if(event.target===this) closeSheetLayout()">
         <div class="bg-slate-800 rounded-2xl border border-slate-700 max-w-4xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-6">
             <div class="flex justify-between items-center mb-4">
-                <h3 class="text-slate-200 font-semibold">Diseño de Lámina</h3>
+                <h3 class="text-slate-200 font-semibold"><span data-i18n="sheetLayoutTitle">Diseño de Lámina</span></h3>
                 <button onclick="closeSheetLayout()" class="shrink-0 text-slate-500 hover:text-red-400 text-2xl leading-none w-9 h-9 flex items-center justify-center">&times;</button>
             </div>
             <div id="sheetLayoutBody" class="space-y-6"></div>
-            <p class="text-[11px] text-slate-500 mt-4">Diseño heurístico de anidado por estantes para planificación y conteo de material \u2014 no es una trayectoria exacta de CNC. Los Paneles Laterales quedan excluidos (se cortan aparte en el CNC). No considera la dirección de la veta; revise antes de cortar.</p>
+            <p class="text-[11px] text-slate-500 mt-4"><span data-i18n="sheetLayoutFooter">Diseño heurístico de anidado por estantes para planificación y conteo de material \u2014 no es una trayectoria exacta de CNC. Los Paneles Laterales quedan excluidos (se cortan aparte en el CNC). No considera la dirección de la veta; revise antes de cortar.</span></p>
         </div>
     </div>
 
     <script>
         const MM_PER_IN = 25.4;
         let currentUnit = 'in';
+        let currentLang = 'es';
+
+        const I18N = {
+            appTitle: { es: "Calculadora de Gabinetes sin Marco 32mm", en: "32mm Frameless Cabinet Calculator" },
+            appSubtitle: { es: "Agregue gabinetes a un pedido y luego genere una lista de corte agregada / orden de compra para producción.", en: "Add cabinets to an order, then generate an aggregated cut list / purchase order for production." },
+            unitIn: { es: "PULGADAS", en: "INCHES" },
+            unitMm: { es: "MM (32mm)", en: "MM (32mm)" },
+            tabGabinetes: { es: "Gabinetes", en: "Cabinets" },
+            tabCajones: { es: "Cajones", en: "Drawers" },
+            tabPersonalizado: { es: "Personalizado", en: "Custom" },
+            addCabinetHeader: { es: "Agregar Gabinete al Pedido", en: "Add Cabinet to Order" },
+            cabinetType: { es: "Tipo de Gabinete", en: "Cabinet Type" },
+            optStandardBase: { es: "Base Estándar (24\" de Profundidad)", en: "Standard Base (24\" Depth)" },
+            optDeepBase12: { es: "Base Profunda de 12\"", en: "12\" Deep Base" },
+            optVanity21: { es: "Tocador de Baño (21\" de Profundidad)", en: "Bathroom Vanity (21\" Depth)" },
+            optUpper12: { es: "Superior Profundo de 12\" (sin traveseros)", en: "12\" Deep Upper (no stretchers)" },
+            presetWidth: { es: "Ancho de Gabinete Preestablecido", en: "Preset Cabinet Width" },
+            optCustomWidth: { es: "-- Ancho Personalizado --", en: "-- Custom Width --" },
+            lblAncho: { es: "Ancho", en: "Width" },
+            lblProfundidad: { es: "Profundidad", en: "Depth" },
+            lblAltura: { es: "Altura", en: "Height" },
+            qtyRequired: { es: "Cantidad Requerida", en: "Quantity Required" },
+            drawerConfig: { es: "Configuración de Cajones", en: "Drawer Configuration" },
+            optDoorOnly: { es: "Solo Puerta (sin cajones)", en: "Door Only (no drawers)" },
+            optDoorPlus4: { es: "Puerta + 1 Cajón de 4\"", en: "Door + 1 Drawer 4\"" },
+            optThree8: { es: "3 Cajones de 8\"", en: "3 Drawers 8\"" },
+            optMixed: { es: "1 Cajón de 4\", 1 de 8\", 1 de 12\"", en: "1 Drawer 4\", 1 8\", 1 12\"" },
+            optTwo12: { es: "2 Cajones de 12\"", en: "2 Drawers 12\"" },
+            drawerConfigNote: { es: "Solo es una etiqueta de referencia — genere los cajones reales en la pestaña Cajones.", en: "This is just a reference label — generate the actual drawers on the Drawers tab." },
+            btnAddToOrder: { es: "+ Agregar al Pedido", en: "+ Add to Order" },
+            calibHeader: { es: "Calibración de Material y Ensamblaje", en: "Material & Joinery Calibration" },
+            calibAppliesAll: { es: "(aplica a todo el pedido)", en: "(applies to whole order)" },
+            sideThick: { es: "Espesor del Cuerpo", en: "Carcass Thickness" },
+            backThickLbl: { es: "Espesor Panel Trasero", en: "Back Panel Thick" },
+            grooveDepthLbl: { es: "Profundidad de Ranura", en: "Groove Depth" },
+            grooveInsetLbl: { es: "Retiro de Ranura", en: "Groove Inset" },
+            stretcherWidthLbl: { es: "Ancho de Travesero", en: "Stretcher Width" },
+            sheetGoodsNesting: { es: "Láminas y Anidado", en: "Sheet Goods & Nesting" },
+            sheetWidthLbl: { es: "Ancho de Lámina", en: "Sheet Width" },
+            sheetHeightLbl: { es: "Alto de Lámina", en: "Sheet Height" },
+            kerfLbl: { es: "Corte de Sierra (Kerf)", en: "Blade Kerf" },
+            kerfLblShort: { es: "Corte de Sierra", en: "Blade Kerf" },
+            btnResetShopDefaults: { es: "Restablecer a valores estándar de taller", en: "Reset to shop-standard defaults" },
+            adminHeader: { es: "Admin: Editar Descripciones de Piezas", en: "Admin: Edit Part Descriptions" },
+            adminPlaceholderNote: { es: "Los marcadores se completan automáticamente según su calibración: {grooveDepth} {grooveInset} {sideThick} {backThick} {stretcherWidth}", en: "Placeholders fill in automatically from your calibration settings: {grooveDepth} {grooveInset} {sideThick} {backThick} {stretcherWidth}" },
+            partSidePanel: { es: "Panel Lateral", en: "Side Panel" },
+            partFrontTopStretcher: { es: "Travesero Superior Frontal", en: "Front Top Stretcher" },
+            partBackTopStretcher: { es: "Travesero Superior Trasero", en: "Back Top Stretcher" },
+            partTopRearStretcher: { es: "Travesero Superior Posterior", en: "Top Rear Stretcher" },
+            partBottomRearStretcher: { es: "Travesero Inferior Posterior", en: "Bottom Rear Stretcher" },
+            partBasePanel: { es: "Panel Base", en: "Base Panel" },
+            partTopPanel: { es: "Panel Superior", en: "Top Panel" },
+            partBottomPanel: { es: "Panel Inferior", en: "Bottom Panel" },
+            partBackPanel: { es: "Panel Trasero", en: "Back Panel" },
+            btnSaveDescriptions: { es: "Guardar Descripciones", en: "Save Descriptions" },
+            btnResetDefault: { es: "Restablecer Predeterminado", en: "Reset to Default" },
+            savedDescPersist: { es: "Las descripciones guardadas se conservan entre sesiones en este dispositivo.", en: "Saved descriptions persist for you across sessions on this device." },
+            standardDefaults: { es: "Valores estándar:", en: "Standard defaults:" },
+            assumptionsBody: { es: "Material de cuerpo de 3/4\", panel trasero de 1/4\" alojado en una ranura de 5/16\" de profundidad (1/16\" extra de holgura para que el panel se mueva), colocada a 3/4\" del borde posterior para librar el travesero/base de 3/4\", travesero nominal de 4\".\n                    Gabinetes base: el panel trasero queda sujeto arriba y abajo — tanto el panel base como el travesero superior trasero llevan una ranura coincidente al mismo retiro, asegurando el panel en su lugar. Cuatro traveseros de 4\" en total: superior frontal, superior trasero (con ranura), superior posterior e inferior posterior, todos de ancho completo — ya no hay travesero angosto. El panel base se atornilla a los laterales con tornillos ocultos.\n                    Superiores: sin traveseros — un panel superior y un panel inferior, idénticos, cada uno con ranura para alojar el panel trasero.", en: "3/4\" carcass stock, 1/4\" back panel captured in a 5/16\"-deep groove (extra 1/16\" of play so the panel can move), set 3/4\" off the rear edge to clear the 3/4\" stretcher/base stock, 4\" nominal stretcher stock.\n                    Base cabinets: back panel is captured top and bottom — the base panel and the back top stretcher both carry a matching dado at the same offset, locking the panel in place. Four 4\" stretchers total: front top, back top (dadoed), top rear, and bottom rear, all full width — no narrowed stretcher anymore. Base panel is pocket-screwed to the sides.\n                    Uppers: no stretchers — a top panel and a bottom panel, identical, each dadoed to seat the back panel." },
+            currentOrder: { es: "Pedido Actual", en: "Current Order" },
+            exportOrderBtn: { es: "Exportar Pedido", en: "Export Order" },
+            clearOrderBtn: { es: "Vaciar Pedido", en: "Clear Order" },
+            exportOrderNote: { es: "\"Exportar Pedido\" incluye gabinetes, cajones y piezas personalizadas en un solo archivo. En el celular, elija PDF para una versión que abre directamente en el navegador. XLSX puede mostrar una ventana de guardar/compartir en lugar de descargar directamente, según su navegador.", en: "\"Export Order\" includes cabinets, drawers, and custom parts in one file. On mobile, choose PDF for a version that opens cleanly right in the browser. XLSX may prompt a save/share sheet instead of downloading directly, depending on your browser." },
+            cutListGenerated: { es: "Lista de Corte / Orden de Compra Generada", en: "Generated Cut List / Purchase Order" },
+            optimizeSheetLayout: { es: "Optimizar Diseño de Lámina", en: "Optimize Sheet Layout" },
+            drawerBoxesHeader: { es: "Cajones de Gaveta", en: "Drawer Boxes" },
+            drawerBoxesSubtitle: { es: "Genere cajones a partir de los gabinetes del pedido, o agréguelos manualmente. Ensamble por tornillo de bolsillo, fondo capturado en ranura.", en: "Generate drawers from the cabinets in your order, or add them manually. Pocket-screw assembly, groove-captured bottom." },
+            generateFromCabinet: { es: "Generar desde Gabinete del Pedido", en: "Generate from Cabinet in Order" },
+            gabineteLbl: { es: "Gabinete", en: "Cabinet" },
+            optNoCabinetsYet: { es: "-- Agregue gabinetes al pedido primero --", en: "-- Add cabinets to the order first --" },
+            guiaLbl: { es: "Guía", en: "Slide" },
+            optUndermount: { es: "Oculta (Undermount)", en: "Undermount (concealed)" },
+            optSidemount: { es: "Lateral (Side-Mount)", en: "Side-Mount" },
+            selectCabinetPreview: { es: "Seleccione un gabinete para ver su configuración de cajones.", en: "Select a cabinet to see its drawer configuration." },
+            btnGenerateFromConfig: { es: "+ Generar según Configuración del Gabinete", en: "+ Generate from Cabinet Configuration" },
+            orEvenBank: { es: "O, para un banco de cajones parejos (sin usar la configuración del gabinete):", en: "Or, for an even bank of drawers (without using the cabinet configuration):" },
+            numDrawers: { es: "# de Cajones", en: "# of Drawers" },
+            btnGenerateEven: { es: "Generar Parejo", en: "Generate Even" },
+            heightSplitNote: { es: "La altura se reparte en partes iguales usando las vistas/espacios calibrados abajo.", en: "Height is split evenly using the reveals/gaps calibrated below." },
+            addDrawerManualHeader: { es: "Agregar Cajón Manualmente", en: "Add Drawer Manually" },
+            drawerSize: { es: "Tamaño de Cajón", en: "Drawer Size" },
+            optCustomEnterHeight: { es: "Personalizado (ingrese alto abajo)", en: "Custom (enter height below)" },
+            optSmall: { es: "Pequeño", en: "Small" },
+            optMedium: { es: "Mediano", en: "Medium" },
+            optLarge: { es: "Grande", en: "Large" },
+            openingWidth: { es: "Ancho de Apertura", en: "Opening Width" },
+            openingHeight: { es: "Alto de Apertura", en: "Opening Height" },
+            cabinetDepthLbl: { es: "Profundidad de Gabinete", en: "Cabinet Depth" },
+            quantityLbl: { es: "Cantidad", en: "Quantity" },
+            btnAddDrawer: { es: "+ Agregar Cajón", en: "+ Add Drawer" },
+            drawerCalibHeader: { es: "Calibración de Cajones y Guías", en: "Drawer & Slide Calibration" },
+            boxThickLbl: { es: "Espesor de Caja", en: "Box Thickness" },
+            bottomThickLbl: { es: "Espesor de Fondo", en: "Bottom Thickness" },
+            bottomGrooveLbl: { es: "Ranura de Fondo", en: "Bottom Groove" },
+            sheetsAndCut: { es: "Láminas y Corte", en: "Sheet Goods & Cutting" },
+            drawerSizesHeader: { es: "Tamaños de Cajón (Pequeño / Mediano / Grande)", en: "Drawer Sizes (Small / Medium / Large)" },
+            sizesFillNote: { es: "Estos valores llenan el campo \"Alto de Apertura\" al elegir un tamaño en Agregar Cajón Manualmente.", en: "These values fill the \"Opening Height\" field when you pick a size in Add Drawer Manually." },
+            heightSplitHeader: { es: "Reparto de Alturas (Generar desde Gabinete)", en: "Height Split (Generate from Cabinet)" },
+            revealTop: { es: "Vista Superior", en: "Top Reveal" },
+            revealBottom: { es: "Vista Inferior", en: "Bottom Reveal" },
+            gapBetween: { es: "Espacio Entre", en: "Gap Between" },
+            undermountHeader: { es: "Guía Oculta (Undermount)", en: "Undermount (Concealed)" },
+            sidemountHeader: { es: "Guía Lateral (Side-Mount)", en: "Side-Mount" },
+            widthClearTotal: { es: "Retiro Ancho (Total)", en: "Width Clearance (Total)" },
+            heightClear: { es: "Retiro Alto", en: "Height Clearance" },
+            depthSetback: { es: "Retiro Fondo", en: "Depth Setback" },
+            drawerStdAssembly: { es: "Ensamble estándar:", en: "Standard assembly:" },
+            drawerAssemblyBody: { es: "Frente y fondo (trasero) cortados entre los costados, unidos con tornillo de bolsillo. Costados de largo completo (profundidad de la caja). Fondo capturado en ranura en los cuatro lados.\n                        Los retiros de guía son valores de referencia de fábrica — confirme con la ficha técnica de su guía específica antes de cortar. Use \"Optimizar Diseño de Lámina\" abajo para anidar las piezas de cajones por separado de los gabinetes.", en: "Front and back cut between the sides, joined with pocket screws. Full-length sides (box depth). Bottom captured in a groove on all four sides.\n                        Slide clearances are factory reference values — confirm against your specific slide's spec sheet before cutting. Use \"Optimize Sheet Layout\" below to nest drawer parts separately from cabinets." },
+            drawerOrderHeader: { es: "Pedido de Cajones", en: "Drawer Order" },
+            exportDrawersBtn: { es: "Exportar Cajones", en: "Export Drawers" },
+            clearDrawersBtn: { es: "Vaciar Cajones", en: "Clear Drawers" },
+            drawerCutListHeader: { es: "Lista de Corte de Cajones", en: "Drawer Cut List" },
+            customPartsHeader: { es: "Piezas Personalizadas", en: "Custom Parts" },
+            customPartsSubtitle: { es: "Agregue cualquier pieza que no encaje en Gabinetes o Cajones — rellenos, paneles, repisas, etc. — con sus propias dimensiones y espesor de material.", en: "Add any part that doesn't fit Cabinets or Drawers — fillers, panels, shelves, etc. — with its own dimensions and material thickness." },
+            addPartHeader: { es: "Agregar Pieza", en: "Add Part" },
+            partNameLbl: { es: "Nombre de Pieza", en: "Part Name" },
+            phPartName: { es: "Ej: Repisa, Relleno, Panel...", en: "E.g: Shelf, Filler, Panel..." },
+            widthLarge: { es: "Alto/Largo", en: "Height/Length" },
+            thicknessLbl: { es: "Espesor", en: "Thickness" },
+            notesOptional: { es: "Notas (opcional)", en: "Notes (optional)" },
+            phEdgeband: { es: "Ej: bordes con cinta", en: "E.g: edge-banded" },
+            btnAddPart: { es: "+ Agregar Pieza", en: "+ Add Part" },
+            sheetCalibHeader: { es: "Calibración de Láminas", en: "Sheet Calibration" },
+            customUso: { es: "Uso:", en: "Usage:" },
+            customUsoBody: { es: "Cada pieza se agrega tal cual a la lista de corte — no se descompone en más partes. El espesor de cada pieza se usa para agruparla en el Optimizador de Diseño de Lámina junto con piezas del mismo grosor.", en: "Each part is added as-is to the cut list — it isn't broken down into further parts. Each part's thickness is used to group it in the Sheet Layout Optimizer along with parts of the same thickness." },
+            exportPiecesBtn: { es: "Exportar Piezas", en: "Export Parts" },
+            clearPiecesBtn: { es: "Vaciar Piezas", en: "Clear Parts" },
+            customCutListHeader: { es: "Lista de Corte Personalizada", en: "Custom Cut List" },
+            sheetLayoutTitle: { es: "Diseño de Lámina", en: "Sheet Layout" },
+            sheetLayoutFooter: { es: "Diseño heurístico de anidado por estantes para planificación y conteo de material — no es una trayectoria exacta de CNC. Los Paneles Laterales quedan excluidos (se cortan aparte en el CNC). No considera la dirección de la veta; revise antes de cortar.", en: "Heuristic shelf-nesting layout for planning and material counts — not an exact CNC toolpath. Side Panels are excluded (cut separately on the CNC). Grain direction isn't factored in; review before cutting." },
+            unitLabelIn: { es: "pulg", en: "in" },
+            alsoIncludedNote: { es: "También se incluyen automáticamente al usar \"Exportar Pedido\" en la pestaña Gabinetes, como sección adicional del mismo archivo.", en: "They're also automatically included when using \"Export Order\" on the Cabinets tab, as an extra section in the same file." },
+            btnResetStandard: { es: "Restablecer a valores estándar", en: "Reset to standard values" },
+            previewTemplate: { es: "{cfg}: generará {n} cajón(es) — {sizes} — por cada uno de los {qty} gabinete(s).", en: "{cfg}: will generate {n} drawer(s) — {sizes} — for each of the {qty} cabinet(s)." },
+            emptyGabinetesOrder: { es: "Aún no se han agregado gabinetes.", en: "No cabinets added yet." },
+            emptyGabinetesCutlist: { es: "Agregue gabinetes al pedido para generar una lista de corte.", en: "Add cabinets to the order to generate a cut list." },
+            emptyDrawersOrder: { es: "Aún no se han agregado cajones.", en: "No drawers added yet." },
+            emptyDrawersCutlist: { es: "Agregue cajones para generar una lista de corte.", en: "Add drawers to generate a cut list." },
+            emptyCustomOrder: { es: "Aún no se han agregado piezas.", en: "No parts added yet." },
+            emptyCustomCutlist: { es: "Agregue piezas para generar una lista de corte.", en: "Add parts to generate a cut list." },
+            dimW: { es: "Anc", en: "W" },
+            dimD: { es: "Prof", en: "D" },
+            dimH: { es: "Alt", en: "H" },
+            cantLabel: { es: "Cant", en: "Qty" },
+            boxLabel: { es: "Caja", en: "Box" },
+            materialPrefix: { es: "Material de", en: "Material:" },
+            noThicknessSpecified: { es: "sin espesor especificado", en: "no thickness specified" },
+            sheetWordSingular: { es: "lámina", en: "sheet" },
+            sheetWordPlural: { es: "láminas", en: "sheets" },
+            utilizationTemplate: { es: "~{u}% de aprovechamiento de material, {p} piezas", en: "~{u}% material utilization, {p} pieces" },
+            sheetNumTemplate: { es: "Lámina {n}", en: "Sheet {n}" },
+            oversizedTemplate: { es: "{n} pieza(s) exceden el tamaño de la lámina y no pudieron colocarse: {list}", en: "{n} piece(s) exceed the sheet size and couldn't be placed: {list}" },
+            alertNoCabinetsOptimize: { es: "Agregue al menos un gabinete al pedido antes de optimizar el diseño de lámina.", en: "Add at least one cabinet to the order before optimizing a sheet layout." },
+            alertNoDrawersOptimize: { es: "Agregue al menos un cajón antes de optimizar el diseño de lámina.", en: "Add at least one drawer before optimizing a sheet layout." },
+            alertSelectCabinet: { es: "Seleccione un gabinete del pedido.", en: "Select a cabinet from the order." },
+            alertDoorOnlyConfig: { es: "Este gabinete está configurado como \"Solo Puerta\" y no tiene cajones definidos. Cambie su configuración en Gabinetes, o use \"Generar Parejo\" abajo.", en: "This cabinet is configured as \"Door Only\" and has no drawers defined. Change its configuration in Cabinets, or use \"Generate Even\" below." },
+            alertDrawerFieldsRequired: { es: "Ingrese ancho, alto de apertura y profundidad de gabinete antes de agregar.", en: "Enter opening width, height, and cabinet depth before adding." },
+            alertCustomFieldsRequired: { es: "Ingrese un nombre y dimensiones válidas antes de agregar la pieza.", en: "Enter a name and valid dimensions before adding the part." },
+            alertNoCustomOptimize: { es: "Agregue al menos una pieza antes de optimizar el diseño de lámina.", en: "Add at least one part before optimizing a sheet layout." },
+            alertNoDataExport: { es: "Agregue al menos un gabinete, cajón o pieza personalizada antes de exportar.", en: "Add at least one cabinet, drawer, or custom part before exporting." },
+            alertNoDrawersExport: { es: "Agregue al menos un cajón antes de exportar.", en: "Add at least one drawer before exporting." },
+            alertNoCustomExport: { es: "Agregue al menos una pieza antes de exportar.", en: "Add at least one part before exporting." },
+            colCabinetType: { es: "Tipo de Gabinete", en: "Cabinet Type" },
+            colWidth: { es: "Ancho", en: "Width" },
+            colDepth: { es: "Profundidad", en: "Depth" },
+            colHeight: { es: "Altura", en: "Height" },
+            colQty: { es: "Cantidad", en: "Quantity" },
+            colQtyShort: { es: "Cant", en: "Qty" },
+            colPart: { es: "Pieza", en: "Part" },
+            colDimA: { es: "Dimensión A", en: "Dimension A" },
+            colDimB: { es: "Dimensión B", en: "Dimension B" },
+            colDimAShort: { es: "Dim A", en: "Dim A" },
+            colDimBShort: { es: "Dim B", en: "Dim B" },
+            colNotes: { es: "Notas", en: "Notes" },
+            colOrigin: { es: "Origen", en: "Source" },
+            colSlide: { es: "Guía", en: "Slide" },
+            colBoxWidth: { es: "Ancho de Caja", en: "Box Width" },
+            colBoxDepth: { es: "Profundidad de Caja", en: "Box Depth" },
+            colBoxHeight: { es: "Alto de Caja", en: "Box Height" },
+            colBoxWidthShort: { es: "Ancho Caja", en: "Box W" },
+            colBoxDepthShort: { es: "Prof. Caja", en: "Box D" },
+            colBoxHeightShort: { es: "Alto Caja", en: "Box H" },
+            colThickness: { es: "Espesor", en: "Thickness" },
+            pdfTitleCabinets: { es: "Pedido y Lista de Corte de Gabinetes", en: "Cabinet Order & Cut List" },
+            pdfGenerated: { es: "Generado {date}", en: "Generated {date}" },
+            pdfSectionOrder: { es: "Pedido", en: "Order" },
+            pdfSectionCutList: { es: "Lista de Corte", en: "Cut List" },
+            pdfSectionDrawerOrder: { es: "Pedido de Cajones", en: "Drawer Order" },
+            pdfSectionDrawerCutList: { es: "Lista de Corte de Cajones", en: "Drawer Cut List" },
+            pdfSectionCustomCutList: { es: "Lista de Corte Personalizada", en: "Custom Cut List" },
+            pdfTitleDrawers: { es: "Pedido y Lista de Corte de Cajones", en: "Drawer Order & Cut List" },
+            pdfTitleCustom: { es: "Lista de Corte Personalizada", en: "Custom Cut List" },
+            xlsxOrder: { es: "Pedido", en: "Order" },
+            xlsxCutList: { es: "Lista de Corte", en: "Cut List" },
+            xlsxDrawers: { es: "Cajones", en: "Drawers" },
+            xlsxDrawerCutList: { es: "Corte de Cajones", en: "Drawer Cut List" },
+            xlsxCustom: { es: "Personalizado", en: "Custom" },
+            doorOnlyPreview: { es: "Este gabinete está configurado como \"Solo Puerta\" — sin cajones. Cámbielo al agregarlo en Gabinetes, o use la generación pareja abajo.", en: "This cabinet is configured as \"Door Only\" — no drawers. Change it when adding it in Cabinets, or use the even generation below." },
+            savedCheckmark: { es: "Guardado ✓", en: "Saved ✓" },
+            noteDrawerSide: { es: "Largo completo (profundidad de la caja); tornillo de bolsillo hacia frente y fondo", en: "Full length (box depth); pocket-screwed to front and back" },
+            noteDrawerFrontInterior: { es: "Corte entre costados; el frente decorativo se sobrepone aparte", en: "Cut between the sides; decorative front is applied separately" },
+            noteDrawerBack: { es: "Corte entre costados", en: "Cut between the sides" },
+            noteDrawerBottomTemplate: { es: "Capturado en ranura de {groove}, retirada {inset} del borde inferior", en: "Captured in a {groove} groove, set {inset} up from the bottom edge" },
+            manualEntryLabel: { es: "Entrada manual", en: "Manual entry" },
+        };
+
+        function t(key) {
+            const entry = I18N[key];
+            if (!entry) return key;
+            return entry[currentLang] || entry.es;
+        }
+
+        function applyLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.title = t('appTitle');
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                el.textContent = t(key);
+            });
+            document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+                const key = el.getAttribute('data-i18n-ph');
+                el.placeholder = t(key);
+            });
+
+            document.getElementById('langBtnEs').className = lang === 'es'
+                ? 'px-4 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950'
+                : 'px-4 py-2 rounded-lg text-xs font-bold transition text-slate-400';
+            document.getElementById('langBtnEn').className = lang === 'en'
+                ? 'px-4 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950'
+                : 'px-4 py-2 rounded-lg text-xs font-bold transition text-slate-400';
+
+            // Refresh dropdown option labels that are built from data structures, plus all
+            // rendered content (order lists, cut lists, previews) so dynamic strings pick up the new language.
+            refreshDataDrivenLabels();
+            renderOrder();
+            renderDrawers();
+            renderCustomParts();
+            updateDrawerConfigPreview();
+            populateAdminFields();
+        }
+
+        function setLang(lang) {
+            applyLanguage(lang);
+        }
+
+        // unitLabel's text depends on BOTH language and the currently selected unit (in/mm) —
+        // the generic data-i18n pass above always applies the "in" translation, so this
+        // re-corrects it against whichever unit is actually active.
+        function refreshDataDrivenLabels() {
+            const unitLabelEl = document.getElementById('unitLabel');
+            if (unitLabelEl) unitLabelEl.textContent = currentUnit === 'in' ? t('unitLabelIn') : 'mm';
+        }
+
         let order = [];
         let nextId = 1;
 
         // Cabinet type definitions: which parts each type produces, and per-unit defaults
         const CABINET_TYPES = {
             standardBase: {
-                label: 'Base Estándar (24" de Profundidad)',
+                label_es: 'Base Estándar (24" de Profundidad)', label_en: 'Standard Base (24" Depth)',
                 hasStretchers: true,
                 defaultSlide: 'undermount',
                 defaults: { in: { width: 24, depth: 24, height: 30.5 }, mm: { width: 610, depth: 600, height: 775 } }
             },
             deepBase12: {
-                label: 'Base Profunda de 12"',
+                label_es: 'Base Profunda de 12"', label_en: '12" Deep Base',
                 hasStretchers: true,
                 defaultSlide: 'sidemount',
                 defaults: { in: { width: 24, depth: 12, height: 30.5 }, mm: { width: 610, depth: 305, height: 775 } }
             },
             vanity21: {
-                label: 'Tocador de Baño (21" de Profundidad)',
+                label_es: 'Tocador de Baño (21" de Profundidad)', label_en: 'Bathroom Vanity (21" Depth)',
                 hasStretchers: true,
                 defaultSlide: 'sidemount',
                 defaults: { in: { width: 24, depth: 21, height: 30.5 }, mm: { width: 610, depth: 533, height: 775 } }
             },
             upper12: {
-                label: 'Superior Profundo de 12"',
+                label_es: 'Superior Profundo de 12"', label_en: '12" Deep Upper',
                 hasStretchers: false,
                 defaultSlide: null,
                 defaults: { in: { width: 24, depth: 12, height: 30.5 }, mm: { width: 610, depth: 305, height: 775 } }
             }
         };
+
+        function trLabel(obj) {
+            return obj['label_' + currentLang] || obj.label_es;
+        }
+
+        // Part names are used as stable internal identifiers (aggregation keys, partOrder,
+        // note templates, etc.) in Spanish. This translates them for DISPLAY only.
+        const PART_NAME_EN = {
+            'Panel Lateral': 'Side Panel',
+            'Travesero Superior Frontal': 'Front Top Stretcher',
+            'Travesero Superior Trasero': 'Back Top Stretcher',
+            'Travesero Superior Posterior': 'Top Rear Stretcher',
+            'Travesero Inferior Posterior': 'Bottom Rear Stretcher',
+            'Panel Base': 'Base Panel',
+            'Panel Superior': 'Top Panel',
+            'Panel Inferior': 'Bottom Panel',
+            'Panel Trasero': 'Back Panel',
+            'Costado de Cajón': 'Drawer Side',
+            'Frente de Cajón (Interior)': 'Drawer Front (Interior)',
+            'Fondo Trasero de Cajón': 'Drawer Back',
+            'Fondo de Cajón': 'Drawer Bottom'
+        };
+        function trPartName(name) {
+            if (currentLang === 'es') return name;
+            return PART_NAME_EN[name] || name;
+        }
 
         // Drawer slide types: clearance rules per shop/hardware standard.
         // Width/height clearances are TOTAL (both sides combined) subtracted from the opening.
@@ -698,14 +984,14 @@
         // resulting box depth down to the nearest available slide length (informational).
         const DRAWER_SLIDE_TYPES = {
             undermount: {
-                label: 'Guía Oculta (Undermount)',
+                label_es: 'Guía Oculta (Undermount)', label_en: 'Undermount (concealed)',
                 defaults: {
                     in: { widthClear: 0.625, heightClear: 1, depthSetback: 1.5, depthIncrement: 3 },
                     mm: { widthClear: 16, heightClear: 25, depthSetback: 38, depthIncrement: 76 }
                 }
             },
             sidemount: {
-                label: 'Guía Lateral (Side-Mount)',
+                label_es: 'Guía Lateral (Side-Mount)', label_en: 'Side-Mount',
                 defaults: {
                     in: { widthClear: 1, heightClear: 0.5, depthSetback: 1, depthIncrement: 2 },
                     mm: { widthClear: 25, heightClear: 13, depthSetback: 25, depthIncrement: 51 }
@@ -722,19 +1008,19 @@
         // Quick-select opening heights for common drawer banks — editable per shop standard.
         // These fill the "Alto de Apertura" field in Manual entry; they're a starting point, not a lock.
         const DRAWER_SIZE_PRESETS = {
-            small: { label: 'Pequeño', in: 4, mm: 100 },
-            medium: { label: 'Mediano', in: 8, mm: 200 },
-            large: { label: 'Grande', in: 12, mm: 300 }
+            small: { label_es: 'Pequeño', label_en: 'Small', in: 4, mm: 100 },
+            medium: { label_es: 'Mediano', label_en: 'Medium', in: 8, mm: 200 },
+            large: { label_es: 'Grande', label_en: 'Large', in: 12, mm: 300 }
         };
 
         // Base cabinet front configurations — each lists the drawer bank top-to-bottom
         // using the size preset keys above. Empty array = door only, no drawers.
         const BASE_CABINET_CONFIGS = {
-            doorOnly: { label: 'Solo Puerta (sin cajones)', drawers: [] },
-            doorPlus4: { label: 'Puerta + 1 Cajón de 4"', drawers: ['small'] },
-            three8: { label: '3 Cajones de 8"', drawers: ['medium', 'medium', 'medium'] },
-            mixed: { label: '1 Cajón de 4", 1 de 8", 1 de 12"', drawers: ['small', 'medium', 'large'] },
-            two12: { label: '2 Cajones de 12"', drawers: ['large', 'large'] }
+            doorOnly: { label_es: 'Solo Puerta (sin cajones)', label_en: 'Door Only (no drawers)', drawers: [] },
+            doorPlus4: { label_es: 'Puerta + 1 Cajón de 4"', label_en: 'Door + 1 Drawer 4"', drawers: ['small'] },
+            three8: { label_es: '3 Cajones de 8"', label_en: '3 Drawers 8"', drawers: ['medium', 'medium', 'medium'] },
+            mixed: { label_es: '1 Cajón de 4", 1 de 8", 1 de 12"', label_en: '1 Drawer 4", 1 8", 1 12"', drawers: ['small', 'medium', 'large'] },
+            two12: { label_es: '2 Cajones de 12"', label_en: '2 Drawers 12"', drawers: ['large', 'large'] }
         };
 
         // Shop-standard joinery defaults, per unit
@@ -757,7 +1043,7 @@
         const partOrder = ['Panel Lateral', 'Travesero Superior Frontal', 'Travesero Superior Trasero', 'Travesero Superior Posterior', 'Travesero Inferior Posterior', 'Panel Superior', 'Panel Inferior', 'Panel Base', 'Panel Trasero'];
 
         // --- Admin: editable part descriptions (persisted via artifact storage) ---
-        const defaultNoteTemplates = {
+        const defaultNoteTemplates_es = {
             'Panel Lateral': '{grooveDepth} ranura trasera, detenida a {grooveInset} del borde posterior',
             'Travesero Superior Frontal': 'Ancho completo, veta longitudinal, borde superior frontal',
             'Travesero Superior Trasero': 'Borde superior trasero; ranura de {grooveDepth} en la cara inferior, a {grooveInset} del borde posterior — coincide con la ranura del panel base para asegurar el panel trasero',
@@ -768,15 +1054,32 @@
             'Panel Inferior': 'Idéntico al panel superior; este tipo no lleva traveseros',
             'Panel Trasero': 'Se desliza desde arriba, sujeto en las ranuras laterales'
         };
+        const defaultNoteTemplates_en = {
+            'Panel Lateral': '{grooveDepth} back groove, stopped {grooveInset} from the rear',
+            'Travesero Superior Frontal': 'Full width, long grain, top front edge',
+            'Travesero Superior Trasero': 'Top back edge; {grooveDepth} dado on the underside, {grooveInset} off the back \u2014 matches the base panel dado to lock in the back panel',
+            'Travesero Superior Posterior': 'Full width, near the back, top of box',
+            'Travesero Inferior Posterior': 'Full width, near the back, bottom of box',
+            'Panel Base': 'Pocket-screwed to the sides; {grooveDepth} dado on top face, {grooveInset} off the back',
+            'Panel Superior': '{grooveDepth} dado on the underside, {grooveInset} off the back',
+            'Panel Inferior': 'Identical to top panel, no stretchers on this type',
+            'Panel Trasero': 'Slides in from the top, captured in side grooves'
+        };
+        const DEFAULT_NOTE_TEMPLATES_BY_LANG = { es: defaultNoteTemplates_es, en: defaultNoteTemplates_en };
         const noteFieldIds = {
             'Panel Lateral': 'note_side', 'Travesero Superior Frontal': 'note_frontTop', 'Travesero Superior Trasero': 'note_backTop',
             'Travesero Superior Posterior': 'note_topRear', 'Travesero Inferior Posterior': 'note_bottomRear',
             'Panel Base': 'note_base', 'Panel Superior': 'note_top', 'Panel Inferior': 'note_bottom', 'Panel Trasero': 'note_back'
         };
-        let noteTemplates = { ...defaultNoteTemplates };
+        // Saved custom descriptions are tracked separately per language so switching the UI
+        // language doesn't clobber or mix up the other language's edits.
+        let noteTemplatesByLang = {
+            es: { ...defaultNoteTemplates_es },
+            en: { ...defaultNoteTemplates_en }
+        };
 
         function applyNoteTemplate(partName, j) {
-            const template = noteTemplates[partName] || '';
+            const template = (noteTemplatesByLang[currentLang] && noteTemplatesByLang[currentLang][partName]) || '';
             return template
                 .split('{grooveDepth}').join(fmt(j.d_groove))
                 .split('{grooveInset}').join(fmt(j.i_groove))
@@ -786,19 +1089,21 @@
         }
 
         function populateAdminFields() {
-            Object.keys(defaultNoteTemplates).forEach(part => {
+            const active = noteTemplatesByLang[currentLang];
+            Object.keys(defaultNoteTemplates_es).forEach(part => {
                 const el = document.getElementById(noteFieldIds[part]);
-                if (el) el.value = noteTemplates[part];
+                if (el) el.value = active[part];
             });
         }
 
         async function saveNoteTemplates() {
-            Object.keys(defaultNoteTemplates).forEach(part => {
+            const active = noteTemplatesByLang[currentLang];
+            Object.keys(defaultNoteTemplates_es).forEach(part => {
                 const el = document.getElementById(noteFieldIds[part]);
-                if (el) noteTemplates[part] = el.value;
+                if (el) active[part] = el.value;
             });
             try {
-                await window.storage.set('noteTemplates', JSON.stringify(noteTemplates), false);
+                await window.storage.set('noteTemplates_' + currentLang, JSON.stringify(active), false);
             } catch (e) {
                 console.error('Could not save descriptions', e);
             }
@@ -806,25 +1111,27 @@
             const btn = document.getElementById('saveNotesBtn');
             if (btn) {
                 const original = btn.textContent;
-                btn.textContent = 'Saved \u2713';
+                btn.textContent = t('savedCheckmark');
                 setTimeout(() => { btn.textContent = original; }, 1500);
             }
         }
 
         function resetNoteTemplates() {
-            noteTemplates = { ...defaultNoteTemplates };
+            noteTemplatesByLang[currentLang] = { ...DEFAULT_NOTE_TEMPLATES_BY_LANG[currentLang] };
             populateAdminFields();
             renderOrder();
         }
 
         async function loadNoteTemplates() {
-            try {
-                const result = await window.storage.get('noteTemplates', false);
-                if (result && result.value) {
-                    noteTemplates = { ...defaultNoteTemplates, ...JSON.parse(result.value) };
+            for (const lang of ['es', 'en']) {
+                try {
+                    const result = await window.storage.get('noteTemplates_' + lang, false);
+                    if (result && result.value) {
+                        noteTemplatesByLang[lang] = { ...DEFAULT_NOTE_TEMPLATES_BY_LANG[lang], ...JSON.parse(result.value) };
+                    }
+                } catch (e) {
+                    // Nothing saved yet for this language — defaults stay in place
                 }
-            } catch (e) {
-                // Nothing saved yet — defaults stay in place
             }
             populateAdminFields();
             renderOrder();
@@ -877,7 +1184,7 @@
             document.getElementById('unitBtnMm').className = unit === 'mm'
                 ? 'px-3 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950'
                 : 'px-3 py-2 rounded-lg text-xs font-bold transition text-slate-400';
-            document.getElementById('unitLabel').textContent = unit === 'in' ? 'pulg' : 'mm';
+            document.getElementById('unitLabel').textContent = unit === 'in' ? t('unitLabelIn') : 'mm';
 
             applyDefaults(unit);
             renderOrder(); // re-express existing order in the new unit; order data itself is untouched
@@ -973,7 +1280,7 @@
 
         // Returns the parts list (canonical inches) for one cabinet
         function computeParts(typeKey, W, D, H, j) {
-            const t = CABINET_TYPES[typeKey];
+            const ct = CABINET_TYPES[typeKey];
             const parts = [];
 
             parts.push({
@@ -983,7 +1290,7 @@
                 note: applyNoteTemplate('Panel Lateral', j)
             });
 
-            if (t.hasStretchers) {
+            if (ct.hasStretchers) {
                 const stretcherLen = W - (2 * j.t_side);
                 const baseW = W - (2 * j.t_side);
 
@@ -1101,9 +1408,35 @@
             </svg>`;
         }
 
+        // Shared renderer for one material-thickness group's sheet layout HTML — used by all
+        // three optimizers (cabinets/drawers/custom) so translation only needs to happen once.
+        function renderSheetGroupHTML(group, sheetW, sheetH, kerf, thickLabelOverride) {
+            const { sheets, oversized } = packSheets(group.pieces, sheetW, sheetH, kerf);
+            const totalSheetArea = sheets.length * sheetW * sheetH;
+            const usedArea = group.pieces.reduce((sum, p) => sum + p.w * p.h, 0);
+            const utilization = totalSheetArea > 0 ? ((usedArea / totalSheetArea) * 100).toFixed(0) : 0;
+            const thickLabel = thickLabelOverride !== undefined ? thickLabelOverride : fmt(group.thick);
+            const sheetWord = sheets.length === 1 ? t('sheetWordSingular') : t('sheetWordPlural');
+            const utilText = t('utilizationTemplate').replace('{u}', utilization).replace('{p}', group.pieces.length);
+
+            let html = `<div>
+                        <h4 class="text-slate-200 font-semibold text-sm mb-1">${t('materialPrefix')} ${thickLabel}</h4>
+                        <p class="text-xs text-slate-400 mb-3">${sheets.length} ${sheetWord} (${fmt(sheetW)} x ${fmt(sheetH)}) \u2014 ${utilText}</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            ${sheets.map((s, i) => `<div><p class="text-[11px] text-slate-500 mb-1">${t('sheetNumTemplate').replace('{n}', i + 1)}</p>${buildSheetSVG(s, sheetW, sheetH)}</div>`).join('')}
+                        </div>`;
+            if (oversized.length > 0) {
+                const list = oversized.map(o => `${o.label} (${fmt(o.w)} x ${fmt(o.h)})`).join(', ');
+                const oversizedText = t('oversizedTemplate').replace('{n}', oversized.length).replace('{list}', list);
+                html += `<p class="text-xs text-red-400 mt-2">${oversizedText}</p>`;
+            }
+            html += `</div>`;
+            return html;
+        }
+
         function openSheetLayout() {
             if (order.length === 0) {
-                alert('Agregue al menos un gabinete al pedido antes de optimizar el diseño de lámina.');
+                alert(t('alertNoCabinetsOptimize'));
                 return;
             }
             const { grouped } = buildOrderData();
@@ -1111,7 +1444,7 @@
             const { sheetW, sheetH, kerf } = getSheetSettings();
 
             // Group pieces by material thickness (rounded to avoid float-precision mismatches)
-            // Los Paneles Laterales quedan excluidos — cut separately on the CNC, not part of this nesting.
+            // Side Panels are excluded — cut separately on the CNC, not part of this nesting.
             const materialGroups = new Map();
             grouped.filter(g => g.part !== 'Panel Lateral').forEach(g => {
                 const thick = getMaterialThickness(g.part, j);
@@ -1119,7 +1452,7 @@
                 if (!materialGroups.has(key)) materialGroups.set(key, { thick, pieces: [] });
                 const bucket = materialGroups.get(key);
                 for (let n = 0; n < g.qty; n++) {
-                    bucket.pieces.push({ w: g.dims[0], h: g.dims[1], label: g.part });
+                    bucket.pieces.push({ w: g.dims[0], h: g.dims[1], label: trPartName(g.part) });
                 }
             });
 
@@ -1129,19 +1462,7 @@
             Array.from(materialGroups.values())
                 .sort((a, b) => b.thick - a.thick)
                 .forEach(group => {
-                    const { sheets, oversized } = packSheets(group.pieces, sheetW, sheetH, kerf);
-                    const totalSheetArea = sheets.length * sheetW * sheetH;
-                    const usedArea = group.pieces.reduce((sum, p) => sum + p.w * p.h, 0);
-                    const utilization = totalSheetArea > 0 ? ((usedArea / totalSheetArea) * 100).toFixed(0) : 0;
-
-                    html += `<div>
-                        <h4 class="text-slate-200 font-semibold text-sm mb-1">Material de ${fmt(group.thick)}</h4>
-                        <p class="text-xs text-slate-400 mb-3">${sheets.length} lámina${sheets.length === 1 ? '' : 's'} (${fmt(sheetW)} x ${fmt(sheetH)}) \u2014 ~${utilization}% de aprovechamiento de material, ${group.pieces.length} piezas</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            ${sheets.map((s, i) => `<div><p class="text-[11px] text-slate-500 mb-1">Lámina ${i + 1}</p>${buildSheetSVG(s, sheetW, sheetH)}</div>`).join('')}
-                        </div>
-                        ${oversized.length > 0 ? `<p class="text-xs text-red-400 mt-2">${oversized.length} pieza(s) exceden el tamaño de la lámina y no pudieron colocarse: ${oversized.map(o => `${o.label} (${fmt(o.w)} x ${fmt(o.h)})`).join(', ')}</p>` : ''}
-                    </div>`;
+                    html += renderSheetGroupHTML(group, sheetW, sheetH, kerf);
                 });
 
             bodyEl.innerHTML = html;
@@ -1154,7 +1475,7 @@
 
         function openDrawerSheetLayout() {
             if (drawerOrder.length === 0) {
-                alert('Agregue al menos un cajón antes de optimizar el diseño de lámina.');
+                alert(t('alertNoDrawersOptimize'));
                 return;
             }
             const { grouped } = buildDrawerOrderData();
@@ -1169,7 +1490,7 @@
                 if (!materialGroups.has(key)) materialGroups.set(key, { thick, pieces: [] });
                 const bucket = materialGroups.get(key);
                 for (let n = 0; n < g.qty; n++) {
-                    bucket.pieces.push({ w: g.dims[0], h: g.dims[1], label: g.part });
+                    bucket.pieces.push({ w: g.dims[0], h: g.dims[1], label: trPartName(g.part) });
                 }
             });
 
@@ -1179,19 +1500,7 @@
             Array.from(materialGroups.values())
                 .sort((a, b) => b.thick - a.thick)
                 .forEach(group => {
-                    const { sheets, oversized } = packSheets(group.pieces, sheetW, sheetH, kerf);
-                    const totalSheetArea = sheets.length * sheetW * sheetH;
-                    const usedArea = group.pieces.reduce((sum, p) => sum + p.w * p.h, 0);
-                    const utilization = totalSheetArea > 0 ? ((usedArea / totalSheetArea) * 100).toFixed(0) : 0;
-
-                    html += `<div>
-                        <h4 class="text-slate-200 font-semibold text-sm mb-1">Material de ${fmt(group.thick)}</h4>
-                        <p class="text-xs text-slate-400 mb-3">${sheets.length} lámina${sheets.length === 1 ? '' : 's'} (${fmt(sheetW)} x ${fmt(sheetH)}) \u2014 ~${utilization}% de aprovechamiento de material, ${group.pieces.length} piezas</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            ${sheets.map((s, i) => `<div><p class="text-[11px] text-slate-500 mb-1">Lámina ${i + 1}</p>${buildSheetSVG(s, sheetW, sheetH)}</div>`).join('')}
-                        </div>
-                        ${oversized.length > 0 ? `<p class="text-xs text-red-400 mt-2">${oversized.length} pieza(s) exceden el tamaño de la lámina y no pudieron colocarse: ${oversized.map(o => `${o.label} (${fmt(o.w)} x ${fmt(o.h)})`).join(', ')}</p>` : ''}
-                    </div>`;
+                    html += renderSheetGroupHTML(group, sheetW, sheetH, kerf);
                 });
 
             bodyEl.innerHTML = html;
@@ -1205,22 +1514,22 @@
             const cutListEl = document.getElementById('cutList');
 
             if (order.length === 0) {
-                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">Aún no se han agregado gabinetes.</p>`;
-                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">Agregue gabinetes al pedido para generar una lista de corte.</p>`;
+                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">${t('emptyGabinetesOrder')}</p>`;
+                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">${t('emptyGabinetesCutlist')}</p>`;
                 return;
             }
 
             // Line items
             listEl.innerHTML = order.map(item => {
-                const t = CABINET_TYPES[item.typeKey];
+                const t2 = CABINET_TYPES[item.typeKey];
                 const cfgKey = item.drawerConfig || 'doorOnly';
                 const cfg = BASE_CABINET_CONFIGS[cfgKey];
                 const cfgLine = cfg && cfgKey !== 'doorOnly'
-                    ? `<div class="text-xs text-amber-500/80 mt-0.5">${cfg.label}</div>` : '';
+                    ? `<div class="text-xs text-amber-500/80 mt-0.5">${trLabel(cfg)}</div>` : '';
                 return `<div class="flex justify-between items-center gap-3 bg-slate-900 rounded-xl px-4 py-3">
                     <div class="min-w-0">
-                        <span class="text-slate-200 font-semibold">${item.qty} &times; ${t.label}</span>
-                        <div class="text-xs text-slate-400 mt-0.5">${fmt(item.W_in)} Anc &times; ${fmt(item.D_in)} Prof &times; ${fmt(item.H_in)} Alt</div>
+                        <span class="text-slate-200 font-semibold">${item.qty} &times; ${trLabel(t2)}</span>
+                        <div class="text-xs text-slate-400 mt-0.5">${fmt(item.W_in)} ${t('dimW')} &times; ${fmt(item.D_in)} ${t('dimD')} &times; ${fmt(item.H_in)} ${t('dimH')}</div>
                         ${cfgLine}
                     </div>
                     <button onclick="removeFromOrder(${item.id})" class="shrink-0 text-slate-500 hover:text-red-400 transition text-2xl leading-none w-9 h-9 flex items-center justify-center">&times;</button>
@@ -1249,7 +1558,7 @@
                 const color = partColor[g.part] || 'slate';
                 return `<div class="bg-slate-900 p-4 rounded-xl border-l-4 border-${color}-500 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
                     <div class="min-w-0">
-                        <h3 class="text-slate-200 font-bold">${g.part} <span class="text-xs font-normal text-slate-400">(Cant: ${g.qty})</span></h3>
+                        <h3 class="text-slate-200 font-bold">${trPartName(g.part)} <span class="text-xs font-normal text-slate-400">(${t('cantLabel')}: ${g.qty})</span></h3>
                         <p class="text-xs text-slate-400 mt-1">${g.note}</p>
                     </div>
                     <div class="sm:text-right shrink-0">
@@ -1276,7 +1585,7 @@
             const grouped = Array.from(agg.values()).sort((a, b) => partOrder.indexOf(a.part) - partOrder.indexOf(b.part));
 
             const orderRows = order.map(item => ({
-                'Tipo de Gabinete': CABINET_TYPES[item.typeKey].label,
+                'Tipo de Gabinete': trLabel(CABINET_TYPES[item.typeKey]),
                 'Ancho': fmt(item.W_in),
                 'Profundidad': fmt(item.D_in),
                 'Altura': fmt(item.H_in),
@@ -1284,7 +1593,7 @@
             }));
 
             const cutListRows = grouped.map(g => ({
-                'Pieza': g.part,
+                'Pieza': trPartName(g.part),
                 'Dimensión A': fmt(g.dims[0]),
                 'Dimensión B': fmt(g.dims[1]),
                 'Cantidad': g.qty,
@@ -1390,15 +1699,15 @@
             if (!sel) return;
             const current = sel.value;
             if (order.length === 0) {
-                sel.innerHTML = '<option value="">-- Agregue gabinetes al pedido primero --</option>';
+                sel.innerHTML = '<option value="" data-i18n="optNoCabinetsYet">-- Agregue gabinetes al pedido primero --</option>';
                 updateDrawerConfigPreview();
                 return;
             }
             sel.innerHTML = order.map(item => {
-                const t = CABINET_TYPES[item.typeKey];
+                const ct = CABINET_TYPES[item.typeKey];
                 const cfg = BASE_CABINET_CONFIGS[item.drawerConfig || 'doorOnly'];
-                const cfgSuffix = cfg && item.drawerConfig && item.drawerConfig !== 'doorOnly' ? ` [${cfg.label}]` : '';
-                return `<option value="${item.id}">${item.qty} &times; ${t.label} \u2014 ${fmt(item.W_in)} x ${fmt(item.D_in)} x ${fmt(item.H_in)}${cfgSuffix}</option>`;
+                const cfgSuffix = cfg && item.drawerConfig && item.drawerConfig !== 'doorOnly' ? ` [${trLabel(cfg)}]` : '';
+                return `<option value="${item.id}">${item.qty} &times; ${trLabel(ct)} \u2014 ${fmt(item.W_in)} x ${fmt(item.D_in)} x ${fmt(item.H_in)}${cfgSuffix}</option>`;
             }).join('');
             if (order.some(i => String(i.id) === current)) sel.value = current;
             updateDrawerConfigPreview();
@@ -1410,24 +1719,28 @@
             const cabId = parseInt(document.getElementById('drawerSourceCabinet').value);
             const cab = order.find(i => i.id === cabId);
             if (!cab) {
-                previewEl.textContent = 'Seleccione un gabinete para ver su configuración de cajones.';
+                previewEl.textContent = t('selectCabinetPreview');
                 return;
             }
             const config = BASE_CABINET_CONFIGS[cab.drawerConfig || 'doorOnly'];
             if (!config || config.drawers.length === 0) {
-                previewEl.textContent = 'Este gabinete está configurado como "Solo Puerta" — sin cajones. Cámbielo al agregarlo en Gabinetes, o use la generación pareja abajo.';
+                previewEl.textContent = t('doorOnlyPreview');
                 return;
             }
-            const sizeLabels = config.drawers.map(k => DRAWER_SIZE_PRESETS[k].label).join(', ');
-            previewEl.textContent = `${config.label}: generará ${config.drawers.length} cajón(es) — ${sizeLabels} — por cada uno de los ${cab.qty} gabinete(s).`;
+            const sizeLabels = config.drawers.map(k => trLabel(DRAWER_SIZE_PRESETS[k])).join(', ');
+            previewEl.textContent = t('previewTemplate')
+                .replace('{cfg}', trLabel(config))
+                .replace('{n}', config.drawers.length)
+                .replace('{sizes}', sizeLabels)
+                .replace('{qty}', cab.qty);
         }
 
         function addDrawersFromCabinet() {
             const cabId = parseInt(document.getElementById('drawerSourceCabinet').value);
             const cab = order.find(i => i.id === cabId);
-            if (!cab) { alert('Seleccione un gabinete del pedido.'); return; }
+            if (!cab) { alert(t('alertSelectCabinet')); return; }
 
-            const t = CABINET_TYPES[cab.typeKey];
+            const ct = CABINET_TYPES[cab.typeKey];
             const numDrawers = Math.max(1, parseInt(document.getElementById('drawerCountPerCab').value) || 1);
             const slideType = document.getElementById('drawerSlideTypeAuto').value;
             const j = getJoinery(); // cabinet carcass joinery, for interior opening width
@@ -1441,7 +1754,9 @@
 
             drawerOrder.push({
                 id: nextDrawerId++,
-                sourceLabel: `${t.label} (${fmt(cab.W_in)} x ${fmt(cab.D_in)})`,
+                sourceTypeKey: cab.typeKey,
+                sourceW_in: cab.W_in, sourceD_in: cab.D_in,
+                sourceSizeKey: null,
                 slideType,
                 openW_in, openH_in,
                 boxW_in: boxW, boxH_in: boxH, boxD_in: boxD,
@@ -1455,15 +1770,15 @@
         function addDrawersFromCabinetConfig() {
             const cabId = parseInt(document.getElementById('drawerSourceCabinet').value);
             const cab = order.find(i => i.id === cabId);
-            if (!cab) { alert('Seleccione un gabinete del pedido.'); return; }
+            if (!cab) { alert(t('alertSelectCabinet')); return; }
 
             const config = BASE_CABINET_CONFIGS[cab.drawerConfig || 'doorOnly'];
             if (!config || config.drawers.length === 0) {
-                alert('Este gabinete está configurado como "Solo Puerta" y no tiene cajones definidos. Cambie su configuración en Gabinetes, o use "Generar Parejo" abajo.');
+                alert(t('alertDoorOnlyConfig'));
                 return;
             }
 
-            const t = CABINET_TYPES[cab.typeKey];
+            const ct = CABINET_TYPES[cab.typeKey];
             const slideType = document.getElementById('drawerSlideTypeAuto').value;
             const j = getJoinery();
             const openW_in = Math.max(cab.W_in - (2 * j.t_side), 0);
@@ -1475,7 +1790,9 @@
 
                 drawerOrder.push({
                     id: nextDrawerId++,
-                    sourceLabel: `${t.label} (${fmt(cab.W_in)} x ${fmt(cab.D_in)}) \u2014 ${DRAWER_SIZE_PRESETS[sizeKey].label}`,
+                    sourceTypeKey: cab.typeKey,
+                    sourceW_in: cab.W_in, sourceD_in: cab.D_in,
+                    sourceSizeKey: sizeKey,
                     slideType,
                     openW_in, openH_in,
                     boxW_in: boxW, boxH_in: boxH, boxD_in: boxD,
@@ -1493,7 +1810,7 @@
             const qty = parseInt(document.getElementById('drawerQty').value) || 1;
 
             if (openW_in <= 0 || openH_in <= 0 || cabDepth_in <= 0) {
-                alert('Ingrese ancho, alto de apertura y profundidad de gabinete antes de agregar.');
+                alert(t('alertDrawerFieldsRequired'));
                 return;
             }
 
@@ -1501,7 +1818,9 @@
 
             drawerOrder.push({
                 id: nextDrawerId++,
-                sourceLabel: 'Entrada manual',
+                sourceTypeKey: null,
+                sourceW_in: null, sourceD_in: null,
+                sourceSizeKey: null,
                 slideType,
                 openW_in, openH_in,
                 boxW_in: boxW, boxH_in: boxH, boxD_in: boxD,
@@ -1521,16 +1840,29 @@
         }
 
         // Parts for one drawer box (canonical inches) — pocket-screw assembly, groove-captured bottom
+        // Recomputed at render/export time (not baked in at creation) so it always reflects
+        // the currently active language, regardless of when the drawer entry was added.
+        function getDrawerSourceLabel(d) {
+            if (!d.sourceTypeKey) return t('manualEntryLabel');
+            const ct = CABINET_TYPES[d.sourceTypeKey];
+            const base = `${trLabel(ct)} (${fmt(d.sourceW_in)} x ${fmt(d.sourceD_in)})`;
+            if (d.sourceSizeKey) {
+                return `${base} \u2014 ${trLabel(DRAWER_SIZE_PRESETS[d.sourceSizeKey])}`;
+            }
+            return base;
+        }
+
         function computeDrawerParts(boxW, boxD, boxH) {
             const dj = getDrawerJoinery();
             const parts = [];
-            parts.push({ part: 'Costado de Cajón', qty: 2, dims: [boxD, boxH], note: 'Largo completo (profundidad de la caja); tornillo de bolsillo hacia frente y fondo' });
+            parts.push({ part: 'Costado de Cajón', qty: 2, dims: [boxD, boxH], note: t('noteDrawerSide') });
             const fbWidth = Math.max(boxW - (2 * dj.boxThick), 0);
-            parts.push({ part: 'Frente de Cajón (Interior)', qty: 1, dims: [fbWidth, boxH], note: 'Corte entre costados; el frente decorativo se sobrepone aparte' });
-            parts.push({ part: 'Fondo Trasero de Cajón', qty: 1, dims: [fbWidth, boxH], note: 'Corte entre costados' });
+            parts.push({ part: 'Frente de Cajón (Interior)', qty: 1, dims: [fbWidth, boxH], note: t('noteDrawerFrontInterior') });
+            parts.push({ part: 'Fondo Trasero de Cajón', qty: 1, dims: [fbWidth, boxH], note: t('noteDrawerBack') });
             const bottomW = fbWidth + (2 * dj.bottomGroove);
             const bottomD = Math.max(boxD - (2 * dj.boxThick), 0) + (2 * dj.bottomGroove);
-            parts.push({ part: 'Fondo de Cajón', qty: 1, dims: [bottomW, bottomD], note: `Capturado en ranura de ${fmt(dj.bottomGroove)}, retirada ${fmt(dj.bottomInset)} del borde inferior` });
+            const bottomNote = t('noteDrawerBottomTemplate').replace('{groove}', fmt(dj.bottomGroove)).replace('{inset}', fmt(dj.bottomInset));
+            parts.push({ part: 'Fondo de Cajón', qty: 1, dims: [bottomW, bottomD], note: bottomNote });
             return parts;
         }
 
@@ -1551,8 +1883,8 @@
             const grouped = Array.from(agg.values()).sort((a, b) => drawerPartOrder.indexOf(a.part) - drawerPartOrder.indexOf(b.part));
 
             const drawerOrderRows = drawerOrder.map(d => ({
-                'Origen': d.sourceLabel,
-                'Guía': DRAWER_SLIDE_TYPES[d.slideType].label,
+                'Origen': getDrawerSourceLabel(d),
+                'Guía': trLabel(DRAWER_SLIDE_TYPES[d.slideType]),
                 'Ancho de Caja': fmt(d.boxW_in),
                 'Profundidad de Caja': fmt(d.boxD_in),
                 'Alto de Caja': fmt(d.boxH_in),
@@ -1560,7 +1892,7 @@
             }));
 
             const drawerCutListRows = grouped.map(g => ({
-                'Pieza': g.part,
+                'Pieza': trPartName(g.part),
                 'Dimensión A': fmt(g.dims[0]),
                 'Dimensión B': fmt(g.dims[1]),
                 'Cantidad': g.qty,
@@ -1577,17 +1909,17 @@
             if (!listEl || !cutListEl) return;
 
             if (drawerOrder.length === 0) {
-                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">Aún no se han agregado cajones.</p>`;
-                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">Agregue cajones para generar una lista de corte.</p>`;
+                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">${t('emptyDrawersOrder')}</p>`;
+                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">${t('emptyDrawersCutlist')}</p>`;
                 return;
             }
 
             listEl.innerHTML = drawerOrder.map(d => {
-                const slideLabel = DRAWER_SLIDE_TYPES[d.slideType].label;
+                const slideLabel = trLabel(DRAWER_SLIDE_TYPES[d.slideType]);
                 return `<div class="flex justify-between items-center gap-3 bg-slate-900 rounded-xl px-4 py-3">
                     <div class="min-w-0">
-                        <span class="text-slate-200 font-semibold">${d.qty} &times; ${d.sourceLabel}</span>
-                        <div class="text-xs text-slate-400 mt-0.5">${slideLabel} \u2014 Caja: ${fmt(d.boxW_in)} Anc &times; ${fmt(d.boxD_in)} Prof &times; ${fmt(d.boxH_in)} Alt</div>
+                        <span class="text-slate-200 font-semibold">${d.qty} &times; ${getDrawerSourceLabel(d)}</span>
+                        <div class="text-xs text-slate-400 mt-0.5">${slideLabel} \u2014 ${t('boxLabel')}: ${fmt(d.boxW_in)} ${t('dimW')} &times; ${fmt(d.boxD_in)} ${t('dimD')} &times; ${fmt(d.boxH_in)} ${t('dimH')}</div>
                     </div>
                     <button onclick="removeDrawer(${d.id})" class="shrink-0 text-slate-500 hover:text-red-400 transition text-2xl leading-none w-9 h-9 flex items-center justify-center">&times;</button>
                 </div>`;
@@ -1597,7 +1929,7 @@
             cutListEl.innerHTML = grouped.map(g => {
                 return `<div class="bg-slate-900 p-4 rounded-xl border-l-4 border-amber-500 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
                     <div class="min-w-0">
-                        <h3 class="text-slate-200 font-bold">${g.part} <span class="text-xs font-normal text-slate-400">(Cant: ${g.qty})</span></h3>
+                        <h3 class="text-slate-200 font-bold">${trPartName(g.part)} <span class="text-xs font-normal text-slate-400">(${t('cantLabel')}: ${g.qty})</span></h3>
                         <p class="text-xs text-slate-400 mt-1">${g.note}</p>
                     </div>
                     <div class="sm:text-right shrink-0">
@@ -1641,7 +1973,7 @@
             const note = document.getElementById('customPartNote').value.trim();
 
             if (!name || w_in <= 0 || h_in <= 0) {
-                alert('Ingrese un nombre y dimensiones válidas antes de agregar la pieza.');
+                alert(t('alertCustomFieldsRequired'));
                 return;
             }
 
@@ -1699,8 +2031,8 @@
             if (!listEl || !cutListEl) return;
 
             if (customOrder.length === 0) {
-                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">Aún no se han agregado piezas.</p>`;
-                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">Agregue piezas para generar una lista de corte.</p>`;
+                listEl.innerHTML = `<p class="text-sm text-slate-500 italic">${t('emptyCustomOrder')}</p>`;
+                cutListEl.innerHTML = `<p class="text-sm text-slate-500 italic">${t('emptyCustomCutlist')}</p>`;
                 return;
             }
 
@@ -1708,7 +2040,7 @@
                 return `<div class="flex justify-between items-center gap-3 bg-slate-900 rounded-xl px-4 py-3">
                     <div class="min-w-0">
                         <span class="text-slate-200 font-semibold">${p.qty} &times; ${p.name}</span>
-                        <div class="text-xs text-slate-400 mt-0.5">${fmt(p.w_in)} x ${fmt(p.h_in)}${p.thick_in > 0 ? ` \u2014 Espesor ${fmt(p.thick_in)}` : ''}${p.note ? ` \u2014 ${p.note}` : ''}</div>
+                        <div class="text-xs text-slate-400 mt-0.5">${fmt(p.w_in)} x ${fmt(p.h_in)}${p.thick_in > 0 ? ` \u2014 ${t('thicknessLbl')} ${fmt(p.thick_in)}` : ''}${p.note ? ` \u2014 ${p.note}` : ''}</div>
                     </div>
                     <button onclick="removeCustomPart(${p.id})" class="shrink-0 text-slate-500 hover:text-red-400 transition text-2xl leading-none w-9 h-9 flex items-center justify-center">&times;</button>
                 </div>`;
@@ -1718,8 +2050,8 @@
             cutListEl.innerHTML = grouped.map(g => {
                 return `<div class="bg-slate-900 p-4 rounded-xl border-l-4 border-amber-500 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-3">
                     <div class="min-w-0">
-                        <h3 class="text-slate-200 font-bold">${g.part} <span class="text-xs font-normal text-slate-400">(Cant: ${g.qty})</span></h3>
-                        <p class="text-xs text-slate-400 mt-1">${g.thick > 0 ? `Espesor ${fmt(g.thick)}` : ''}${g.thick > 0 && g.note ? ' — ' : ''}${g.note || ''}</p>
+                        <h3 class="text-slate-200 font-bold">${g.part} <span class="text-xs font-normal text-slate-400">(${t('cantLabel')}: ${g.qty})</span></h3>
+                        <p class="text-xs text-slate-400 mt-1">${g.thick > 0 ? `${t('thicknessLbl')} ${fmt(g.thick)}` : ''}${g.thick > 0 && g.note ? ' — ' : ''}${g.note || ''}</p>
                     </div>
                     <div class="sm:text-right shrink-0">
                         <div class="text-lg font-mono font-bold text-amber-400">${fmt(g.dims[0])} x ${fmt(g.dims[1])}</div>
@@ -1730,7 +2062,7 @@
 
         function openCustomSheetLayout() {
             if (customOrder.length === 0) {
-                alert('Agregue al menos una pieza antes de optimizar el diseño de lámina.');
+                alert(t('alertNoCustomOptimize'));
                 return;
             }
             const { grouped } = buildCustomOrderData();
@@ -1743,7 +2075,7 @@
                 if (!materialGroups.has(key)) materialGroups.set(key, { thick: g.thick, pieces: [] });
                 const bucket = materialGroups.get(key);
                 for (let n = 0; n < g.qty; n++) {
-                    bucket.pieces.push({ w: g.dims[0], h: g.dims[1], label: g.part });
+                    bucket.pieces.push({ w: g.dims[0], h: g.dims[1], label: trPartName(g.part) });
                 }
             });
 
@@ -1753,26 +2085,30 @@
             Array.from(materialGroups.values())
                 .sort((a, b) => b.thick - a.thick)
                 .forEach(group => {
-                    const { sheets, oversized } = packSheets(group.pieces, sheetW, sheetH, kerf);
-                    const totalSheetArea = sheets.length * sheetW * sheetH;
-                    const usedArea = group.pieces.reduce((sum, p) => sum + p.w * p.h, 0);
-                    const utilization = totalSheetArea > 0 ? ((usedArea / totalSheetArea) * 100).toFixed(0) : 0;
-                    const thickLabel = group.thick > 0 ? fmt(group.thick) : 'sin espesor especificado';
-
-                    html += `<div>
-                        <h4 class="text-slate-200 font-semibold text-sm mb-1">Material de ${thickLabel}</h4>
-                        <p class="text-xs text-slate-400 mb-3">${sheets.length} lámina${sheets.length === 1 ? '' : 's'} (${fmt(sheetW)} x ${fmt(sheetH)}) \u2014 ~${utilization}% de aprovechamiento de material, ${group.pieces.length} piezas</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            ${sheets.map((s, i) => `<div><p class="text-[11px] text-slate-500 mb-1">Lámina ${i + 1}</p>${buildSheetSVG(s, sheetW, sheetH)}</div>`).join('')}
-                        </div>
-                        ${oversized.length > 0 ? `<p class="text-xs text-red-400 mt-2">${oversized.length} pieza(s) exceden el tamaño de la lámina y no pudieron colocarse: ${oversized.map(o => `${o.label} (${fmt(o.w)} x ${fmt(o.h)})`).join(', ')}</p>` : ''}
-                    </div>`;
+                    const thickLabel = group.thick > 0 ? fmt(group.thick) : t('noThicknessSpecified');
+                    html += renderSheetGroupHTML(group, sheetW, sheetH, kerf, thickLabel);
                 });
 
             bodyEl.innerHTML = html;
             document.getElementById('sheetModal').classList.remove('hidden');
         }
         // =============== End Custom Parts ================
+
+        // Row objects use stable Spanish keys internally (matches computed data, export column
+        // mapping, etc). This relabels them to the active language right before XLSX export,
+        // since XLSX.utils.json_to_sheet uses object keys directly as the header row.
+        const ORDER_KEY_MAP = [['Tipo de Gabinete', 'colCabinetType'], ['Ancho', 'colWidth'], ['Profundidad', 'colDepth'], ['Altura', 'colHeight'], ['Cantidad', 'colQty']];
+        const CUTLIST_KEY_MAP = [['Pieza', 'colPart'], ['Dimensión A', 'colDimA'], ['Dimensión B', 'colDimB'], ['Cantidad', 'colQty'], ['Notas', 'colNotes']];
+        const DRAWER_ORDER_KEY_MAP = [['Origen', 'colOrigin'], ['Guía', 'colSlide'], ['Ancho de Caja', 'colBoxWidth'], ['Profundidad de Caja', 'colBoxDepth'], ['Alto de Caja', 'colBoxHeight'], ['Cantidad', 'colQty']];
+        const CUSTOM_CUTLIST_KEY_MAP = [['Pieza', 'colPart'], ['Dimensión A', 'colDimA'], ['Dimensión B', 'colDimB'], ['Espesor', 'colThickness'], ['Cantidad', 'colQty'], ['Notas', 'colNotes']];
+
+        function localizeRows(rows, keyMap) {
+            return rows.map(row => {
+                const newRow = {};
+                keyMap.forEach(([esKey, i18nKey]) => { newRow[t(i18nKey)] = row[esKey]; });
+                return newRow;
+            });
+        }
 
         function downloadBlob(blob, filename) {
             const url = URL.createObjectURL(blob);
@@ -1793,7 +2129,7 @@
 
         function exportOrder() {
             if (order.length === 0 && drawerOrder.length === 0 && customOrder.length === 0) {
-                alert('Agregue al menos un gabinete, cajón o pieza personalizada antes de exportar.');
+                alert(t('alertNoDataExport'));
                 return;
             }
             const format = document.getElementById('exportFormat').value;
@@ -1809,29 +2145,29 @@
 
             if (order.length > 0) {
                 const { orderRows, cutListRows } = buildOrderData();
-                const wsOrder = XLSX.utils.json_to_sheet(orderRows);
-                const wsCutList = XLSX.utils.json_to_sheet(cutListRows);
+                const wsOrder = XLSX.utils.json_to_sheet(localizeRows(orderRows, ORDER_KEY_MAP));
+                const wsCutList = XLSX.utils.json_to_sheet(localizeRows(cutListRows, CUTLIST_KEY_MAP));
                 wsOrder['!cols'] = [{ wch: 28 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 10 }];
                 wsCutList['!cols'] = [{ wch: 16 }, { wch: 14 }, { wch: 14 }, { wch: 10 }, { wch: 55 }];
-                XLSX.utils.book_append_sheet(wb, wsOrder, 'Pedido');
-                XLSX.utils.book_append_sheet(wb, wsCutList, 'Lista de Corte');
+                XLSX.utils.book_append_sheet(wb, wsOrder, t('xlsxOrder'));
+                XLSX.utils.book_append_sheet(wb, wsCutList, t('xlsxCutList'));
             }
 
             if (drawerOrder.length > 0) {
                 const { drawerOrderRows, drawerCutListRows } = buildDrawerOrderData();
-                const wsDrawerOrder = XLSX.utils.json_to_sheet(drawerOrderRows);
-                const wsDrawerCutList = XLSX.utils.json_to_sheet(drawerCutListRows);
+                const wsDrawerOrder = XLSX.utils.json_to_sheet(localizeRows(drawerOrderRows, DRAWER_ORDER_KEY_MAP));
+                const wsDrawerCutList = XLSX.utils.json_to_sheet(localizeRows(drawerCutListRows, CUTLIST_KEY_MAP));
                 wsDrawerOrder['!cols'] = [{ wch: 30 }, { wch: 20 }, { wch: 14 }, { wch: 16 }, { wch: 14 }, { wch: 10 }];
                 wsDrawerCutList['!cols'] = [{ wch: 22 }, { wch: 14 }, { wch: 14 }, { wch: 10 }, { wch: 55 }];
-                XLSX.utils.book_append_sheet(wb, wsDrawerOrder, 'Cajones');
-                XLSX.utils.book_append_sheet(wb, wsDrawerCutList, 'Corte de Cajones');
+                XLSX.utils.book_append_sheet(wb, wsDrawerOrder, t('xlsxDrawers'));
+                XLSX.utils.book_append_sheet(wb, wsDrawerCutList, t('xlsxDrawerCutList'));
             }
 
             if (customOrder.length > 0) {
                 const { customCutListRows } = buildCustomOrderData();
-                const wsCustom = XLSX.utils.json_to_sheet(customCutListRows);
+                const wsCustom = XLSX.utils.json_to_sheet(localizeRows(customCutListRows, CUSTOM_CUTLIST_KEY_MAP));
                 wsCustom['!cols'] = [{ wch: 22 }, { wch: 14 }, { wch: 14 }, { wch: 12 }, { wch: 10 }, { wch: 45 }];
-                XLSX.utils.book_append_sheet(wb, wsCustom, 'Personalizado');
+                XLSX.utils.book_append_sheet(wb, wsCustom, t('xlsxCustom'));
             }
 
             const stamp = new Date().toISOString().slice(0, 10);
@@ -1846,10 +2182,10 @@
 
             doc.setFontSize(16);
             doc.setTextColor(30, 30, 30);
-            doc.text('Pedido y Lista de Corte de Gabinetes', 14, 18);
+            doc.text(t('pdfTitleCabinets'), 14, 18);
             doc.setFontSize(9);
             doc.setTextColor(120);
-            doc.text(`Generado ${new Date().toLocaleDateString()}`, 14, 24);
+            doc.text(t('pdfGenerated').replace('{date}', new Date().toLocaleDateString()), 14, 24);
 
             let cursorY = 34;
             let usedFirstPage = false;
@@ -1860,10 +2196,10 @@
 
                 doc.setFontSize(11);
                 doc.setTextColor(30, 30, 30);
-                doc.text('Pedido', 14, cursorY);
+                doc.text(t('pdfSectionOrder'), 14, cursorY);
                 doc.autoTable({
                     startY: cursorY + 3,
-                    head: [['Tipo de Gabinete', 'Ancho', 'Profundidad', 'Altura', 'Cant']],
+                    head: [[t('colCabinetType'), t('colWidth'), t('colDepth'), t('colHeight'), t('colQtyShort')]],
                     body: orderRows.map(r => [r['Tipo de Gabinete'], r.Ancho, r.Profundidad, r.Altura, r.Cantidad]),
                     theme: 'grid',
                     headStyles: { fillColor: [30, 41, 59] },
@@ -1872,10 +2208,10 @@
 
                 cursorY = doc.lastAutoTable.finalY + 10;
                 doc.setFontSize(11);
-                doc.text('Lista de Corte', 14, cursorY);
+                doc.text(t('pdfSectionCutList'), 14, cursorY);
                 doc.autoTable({
                     startY: cursorY + 3,
-                    head: [['Pieza', 'Dim A', 'Dim B', 'Cant', 'Notas']],
+                    head: [[t('colPart'), t('colDimAShort'), t('colDimBShort'), t('colQtyShort'), t('colNotes')]],
                     body: cutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Cantidad, r.Notas]),
                     theme: 'grid',
                     headStyles: { fillColor: [30, 41, 59] },
@@ -1894,10 +2230,10 @@
 
                 doc.setFontSize(11);
                 doc.setTextColor(30, 30, 30);
-                doc.text('Pedido de Cajones', 14, cursorY);
+                doc.text(t('pdfSectionDrawerOrder'), 14, cursorY);
                 doc.autoTable({
                     startY: cursorY + 3,
-                    head: [['Origen', 'Guía', 'Ancho Caja', 'Prof. Caja', 'Alto Caja', 'Cant']],
+                    head: [[t('colOrigin'), t('colSlide'), t('colBoxWidthShort'), t('colBoxDepthShort'), t('colBoxHeightShort'), t('colQtyShort')]],
                     body: drawerOrderRows.map(r => [r['Origen'], r['Guía'], r['Ancho de Caja'], r['Profundidad de Caja'], r['Alto de Caja'], r.Cantidad]),
                     theme: 'grid',
                     headStyles: { fillColor: [30, 41, 59] },
@@ -1906,10 +2242,10 @@
 
                 cursorY = doc.lastAutoTable.finalY + 10;
                 doc.setFontSize(11);
-                doc.text('Lista de Corte de Cajones', 14, cursorY);
+                doc.text(t('pdfSectionDrawerCutList'), 14, cursorY);
                 doc.autoTable({
                     startY: cursorY + 3,
-                    head: [['Pieza', 'Dim A', 'Dim B', 'Cant', 'Notas']],
+                    head: [[t('colPart'), t('colDimAShort'), t('colDimBShort'), t('colQtyShort'), t('colNotes')]],
                     body: drawerCutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Cantidad, r.Notas]),
                     theme: 'grid',
                     headStyles: { fillColor: [30, 41, 59] },
@@ -1926,10 +2262,10 @@
 
                 doc.setFontSize(11);
                 doc.setTextColor(30, 30, 30);
-                doc.text('Lista de Corte Personalizada', 14, cursorY);
+                doc.text(t('pdfSectionCustomCutList'), 14, cursorY);
                 doc.autoTable({
                     startY: cursorY + 3,
-                    head: [['Pieza', 'Dim A', 'Dim B', 'Espesor', 'Cant', 'Notas']],
+                    head: [[t('colPart'), t('colDimAShort'), t('colDimBShort'), t('colThickness'), t('colQtyShort'), t('colNotes')]],
                     body: customCutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Espesor, r.Cantidad, r.Notas]),
                     theme: 'grid',
                     headStyles: { fillColor: [30, 41, 59] },
@@ -1946,7 +2282,7 @@
         // ============ Per-section exports: Cajones ============
         function exportDrawerOrder() {
             if (drawerOrder.length === 0) {
-                alert('Agregue al menos un cajón antes de exportar.');
+                alert(t('alertNoDrawersExport'));
                 return;
             }
             const format = document.getElementById('drawerExportFormat').value;
@@ -1960,12 +2296,12 @@
         function exportDrawersToXLSX() {
             const { drawerOrderRows, drawerCutListRows } = buildDrawerOrderData();
             const wb = XLSX.utils.book_new();
-            const wsDrawerOrder = XLSX.utils.json_to_sheet(drawerOrderRows);
-            const wsDrawerCutList = XLSX.utils.json_to_sheet(drawerCutListRows);
+            const wsDrawerOrder = XLSX.utils.json_to_sheet(localizeRows(drawerOrderRows, DRAWER_ORDER_KEY_MAP));
+            const wsDrawerCutList = XLSX.utils.json_to_sheet(localizeRows(drawerCutListRows, CUTLIST_KEY_MAP));
             wsDrawerOrder['!cols'] = [{ wch: 30 }, { wch: 20 }, { wch: 14 }, { wch: 16 }, { wch: 14 }, { wch: 10 }];
             wsDrawerCutList['!cols'] = [{ wch: 22 }, { wch: 14 }, { wch: 14 }, { wch: 10 }, { wch: 55 }];
-            XLSX.utils.book_append_sheet(wb, wsDrawerOrder, 'Cajones');
-            XLSX.utils.book_append_sheet(wb, wsDrawerCutList, 'Corte de Cajones');
+            XLSX.utils.book_append_sheet(wb, wsDrawerOrder, t('xlsxDrawers'));
+            XLSX.utils.book_append_sheet(wb, wsDrawerCutList, t('xlsxDrawerCutList'));
 
             const stamp = new Date().toISOString().slice(0, 10);
             const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
@@ -1980,17 +2316,17 @@
 
             doc.setFontSize(16);
             doc.setTextColor(30, 30, 30);
-            doc.text('Pedido y Lista de Corte de Cajones', 14, 18);
+            doc.text(t('pdfTitleDrawers'), 14, 18);
             doc.setFontSize(9);
             doc.setTextColor(120);
-            doc.text(`Generado ${new Date().toLocaleDateString()}`, 14, 24);
+            doc.text(t('pdfGenerated').replace('{date}', new Date().toLocaleDateString()), 14, 24);
 
             doc.setFontSize(11);
             doc.setTextColor(30, 30, 30);
-            doc.text('Pedido de Cajones', 14, 34);
+            doc.text(t('pdfSectionDrawerOrder'), 14, 34);
             doc.autoTable({
                 startY: 37,
-                head: [['Origen', 'Guía', 'Ancho Caja', 'Prof. Caja', 'Alto Caja', 'Cant']],
+                head: [[t('colOrigin'), t('colSlide'), t('colBoxWidthShort'), t('colBoxDepthShort'), t('colBoxHeightShort'), t('colQtyShort')]],
                 body: drawerOrderRows.map(r => [r['Origen'], r['Guía'], r['Ancho de Caja'], r['Profundidad de Caja'], r['Alto de Caja'], r.Cantidad]),
                 theme: 'grid',
                 headStyles: { fillColor: [30, 41, 59] },
@@ -1999,10 +2335,10 @@
 
             const afterOrderY = doc.lastAutoTable.finalY + 10;
             doc.setFontSize(11);
-            doc.text('Lista de Corte de Cajones', 14, afterOrderY);
+            doc.text(t('pdfSectionDrawerCutList'), 14, afterOrderY);
             doc.autoTable({
                 startY: afterOrderY + 3,
-                head: [['Pieza', 'Dim A', 'Dim B', 'Cant', 'Notas']],
+                head: [[t('colPart'), t('colDimAShort'), t('colDimBShort'), t('colQtyShort'), t('colNotes')]],
                 body: drawerCutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Cantidad, r.Notas]),
                 theme: 'grid',
                 headStyles: { fillColor: [30, 41, 59] },
@@ -2018,7 +2354,7 @@
         // ============ Per-section exports: Personalizado ============
         function exportCustomOrder() {
             if (customOrder.length === 0) {
-                alert('Agregue al menos una pieza antes de exportar.');
+                alert(t('alertNoCustomExport'));
                 return;
             }
             const format = document.getElementById('customExportFormat').value;
@@ -2032,9 +2368,9 @@
         function exportCustomToXLSX() {
             const { customCutListRows } = buildCustomOrderData();
             const wb = XLSX.utils.book_new();
-            const wsCustom = XLSX.utils.json_to_sheet(customCutListRows);
+            const wsCustom = XLSX.utils.json_to_sheet(localizeRows(customCutListRows, CUSTOM_CUTLIST_KEY_MAP));
             wsCustom['!cols'] = [{ wch: 22 }, { wch: 14 }, { wch: 14 }, { wch: 12 }, { wch: 10 }, { wch: 45 }];
-            XLSX.utils.book_append_sheet(wb, wsCustom, 'Personalizado');
+            XLSX.utils.book_append_sheet(wb, wsCustom, t('xlsxCustom'));
 
             const stamp = new Date().toISOString().slice(0, 10);
             const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
@@ -2049,16 +2385,16 @@
 
             doc.setFontSize(16);
             doc.setTextColor(30, 30, 30);
-            doc.text('Lista de Corte Personalizada', 14, 18);
+            doc.text(t('pdfTitleCustom'), 14, 18);
             doc.setFontSize(9);
             doc.setTextColor(120);
-            doc.text(`Generado ${new Date().toLocaleDateString()}`, 14, 24);
+            doc.text(t('pdfGenerated').replace('{date}', new Date().toLocaleDateString()), 14, 24);
 
             doc.setFontSize(11);
             doc.setTextColor(30, 30, 30);
             doc.autoTable({
                 startY: 30,
-                head: [['Pieza', 'Dim A', 'Dim B', 'Espesor', 'Cant', 'Notas']],
+                head: [[t('colPart'), t('colDimAShort'), t('colDimBShort'), t('colThickness'), t('colQtyShort'), t('colNotes')]],
                 body: customCutListRows.map(r => [r.Pieza, r['Dimensión A'], r['Dimensión B'], r.Espesor, r.Cantidad, r.Notas]),
                 theme: 'grid',
                 headStyles: { fillColor: [30, 41, 59] },
@@ -2072,6 +2408,7 @@
         }
 
         // Boot
+        applyLanguage('es');
         setUnit('in');
         loadNoteTemplates();
     </script>
